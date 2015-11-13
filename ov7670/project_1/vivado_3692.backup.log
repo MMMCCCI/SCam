@@ -1,0 +1,76 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Thu Nov 12 23:51:05 2015
+# Process ID: 3692
+# Current directory: C:/Users/Julian/Desktop/SmartCam/ov7670/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6996 C:\Users\Julian\Desktop\SmartCam\ov7670\project_1\project_1.xpr
+# Log file: C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/vivado.log
+# Journal file: C:/Users/Julian/Desktop/SmartCam/ov7670/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.xpr
+INFO: [Project 1-313] Project file moved from '/home/splebuty/Documents/SmartCam/ov7670/project_1' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Accumulator.vhd', nor could it be found using path 'C:/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Accumulator.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.3/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 765.453 ; gain = 208.375
+remove_files C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Accumulator.vhd
+file delete -force C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Accumulator.vhd
+reset_run synth_2
+launch_runs synth_2
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add2.vhd" into library xil_defaultlib [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add2.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add3.vhd" into library xil_defaultlib [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add3.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Julian/Desktop/SmartCam/ov7670/clocking.vhd" into library xil_defaultlib [C:/Users/Julian/Desktop/SmartCam/ov7670/clocking.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Julian/Desktop/SmartCam/ov7670/debounce.vhd" into library xil_defaultlib [C:/Users/Julian/Desktop/SmartCam/ov7670/debounce.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Julian/Desktop/SmartCam/ov7670/dual_framebuffer.vhd" into library xil_defaultlib [C:/Users/Julian/Desktop/SmartCam/ov7670/dual_framebuffer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Julian/Desktop/SmartCam/ov7670/framebuffer.vhd" into library xil_defaultlib [C:/Users/Julian/Desktop/SmartCam/ov7670/framebuffer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd" into library xil_defaultlib [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Julian/Desktop/SmartCam/ov7670/i2c_sender.vhd" into library xil_defaultlib [C:/Users/Julian/Desktop/SmartCam/ov7670/i2c_sender.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Julian/Desktop/SmartCam/ov7670/linebuffer.vhd" into library xil_defaultlib [C:/Users/Julian/Desktop/SmartCam/ov7670/linebuffer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_capture.vhd" into library xil_defaultlib [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_capture.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_controller.vhd" into library xil_defaultlib [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_controller.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_registers.vhd" into library xil_defaultlib [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_registers.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd" into library xil_defaultlib [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/reg.vhd" into library xil_defaultlib [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/reg.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/rgbconverter.vhd" into library xil_defaultlib [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/rgbconverter.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd" into library xil_defaultlib [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftregister.vhd" into library xil_defaultlib [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftregister.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd" into library xil_defaultlib [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd" into library xil_defaultlib [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Julian/Desktop/SmartCam/ov7670/tb_i2c_sender.vhd" into library xil_defaultlib [C:/Users/Julian/Desktop/SmartCam/ov7670/tb_i2c_sender.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Julian/Desktop/SmartCam/ov7670/tb_linebuffer.vhd" into library xil_defaultlib [C:/Users/Julian/Desktop/SmartCam/ov7670/tb_linebuffer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Julian/Desktop/SmartCam/ov7670/tb_ov7670_top.vhd" into library xil_defaultlib [C:/Users/Julian/Desktop/SmartCam/ov7670/tb_ov7670_top.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/tb_sync.vhd" into library xil_defaultlib [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/tb_sync.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Julian/Desktop/SmartCam/ov7670/vga.vhd" into library xil_defaultlib [C:/Users/Julian/Desktop/SmartCam/ov7670/vga.vhd:1]
+[Thu Nov 12 23:52:44 2015] Launched synth_2...
+Run output will be captured here: C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.runs/synth_2/runme.log
+launch_runs impl_2
+[Thu Nov 12 23:54:00 2015] Launched impl_2...
+Run output will be captured here: C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.runs/impl_2/runme.log
+open_run impl_2
+INFO: [Netlist 29-17] Analyzing 99 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.3
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/.Xil/Vivado-1864-Julian-PC/dcp/ov7670_top_early.xdc]
+Finished Parsing XDC File [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/.Xil/Vivado-1864-Julian-PC/dcp/ov7670_top_early.xdc]
+Parsing XDC File [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/.Xil/Vivado-1864-Julian-PC/dcp/ov7670_top.xdc]
+Finished Parsing XDC File [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/.Xil/Vivado-1864-Julian-PC/dcp/ov7670_top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.710 . Memory (MB): peak = 985.746 ; gain = 1.074
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.711 . Memory (MB): peak = 985.746 ; gain = 1.074
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 1116.828 ; gain = 353.344
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 12 23:58:42 2015...

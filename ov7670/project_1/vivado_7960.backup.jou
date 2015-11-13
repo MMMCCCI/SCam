@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Fri Nov 13 00:36:20 2015
+# Process ID: 7960
+# Current directory: C:/Users/Julian/Desktop/SmartCam/ov7670/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6432 C:\Users\Julian\Desktop\SmartCam\ov7670\project_1\project_1.xpr
+# Log file: C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/vivado.log
+# Journal file: C:/Users/Julian/Desktop/SmartCam/ov7670/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.xpr

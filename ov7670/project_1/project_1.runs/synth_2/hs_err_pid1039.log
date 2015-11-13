@@ -1,0 +1,5 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/lib64/libc.so.6(+0x35650) [0x7f65721b2650]

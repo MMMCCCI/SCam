@@ -1,0 +1,736 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:39 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Thu Oct 29 16:57:13 2015
+# Process ID: 12337
+# Current directory: /home/splebuty/Documents/SmartCam/ov7670
+# Command line: vivado
+# Log file: /home/splebuty/Documents/SmartCam/ov7670/vivado.log
+# Journal file: /home/splebuty/Documents/SmartCam/ov7670/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.3/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 5888.105 ; gain = 112.414 ; free physical = 1757 ; free virtual = 10266
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.3
+  **** Build date : Sep 28 2015-20:24:25
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248690417
+set_property PROGRAM.FILE {/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/ov7670_top.bit} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/ov7670_top.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_2
+launch_runs synth_2
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/tb_i2c_sender.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/tb_i2c_sender.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/tb_ov7670_top.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/tb_ov7670_top.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/vga.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/vga.vhd:1]
+[Thu Oct 29 17:04:18 2015] Launched synth_2...
+Run output will be captured here: /home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/synth_2/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg484-1
+Top: ov7670_top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:01:46 ; elapsed = 00:07:27 . Memory (MB): peak = 6073.668 ; gain = 5122.473 ; free physical = 1164 ; free virtual = 9705
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ov7670_top' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:37]
+INFO: [Synth 8-3491] module 'debounce' declared at '/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd:11' bound to instance 'btn_debounce' of component 'debounce' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'debounce' [/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (1#1) [/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd:19]
+INFO: [Synth 8-3491] module 'vga' declared at '/home/splebuty/Documents/SmartCam/ov7670/vga.vhd:11' bound to instance 'Inst_vga' of component 'vga' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'vga' [/home/splebuty/Documents/SmartCam/ov7670/vga.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'vga' (2#1) [/home/splebuty/Documents/SmartCam/ov7670/vga.vhd:24]
+INFO: [Synth 8-3491] module 'dual_framebuffer' declared at '/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:5' bound to instance 'fb' of component 'dual_framebuffer' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'dual_framebuffer' [/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:18]
+INFO: [Synth 8-3491] module 'frame_buffer' declared at '/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd:5' bound to instance 'fb0' of component 'frame_buffer' [/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'frame_buffer' [/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'frame_buffer' (3#1) [/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd:19]
+INFO: [Synth 8-3491] module 'frame_buffer2' declared at '/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd:5' bound to instance 'fb1' of component 'frame_buffer2' [/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'frame_buffer2' [/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'frame_buffer2' (4#1) [/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'dual_framebuffer' (5#1) [/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:18]
+INFO: [Synth 8-3491] module 'ov7670_capture' declared at '/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd:11' bound to instance 'capture' of component 'ov7670_capture' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'ov7670_capture' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_capture' (6#1) [/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd:23]
+INFO: [Synth 8-3491] module 'ov7670_controller' declared at '/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd:11' bound to instance 'controller' of component 'ov7670_controller' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'ov7670_controller' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd:24]
+INFO: [Synth 8-3491] module 'i2c_sender' declared at '/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd:11' bound to instance 'Inst_i2c_sender' of component 'i2c_sender' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'i2c_sender' [/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'i2c_sender' (7#1) [/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd:24]
+INFO: [Synth 8-3491] module 'ov7670_registers' declared at '/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd:12' bound to instance 'Inst_ov7670_registers' of component 'ov7670_registers' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'ov7670_registers' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_registers' (8#1) [/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_controller' (9#1) [/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd:24]
+INFO: [Synth 8-3491] module 'clocking' declared at '/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:73' bound to instance 'your_instance_name' of component 'clocking' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'clocking' [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:83]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'clkin1_buf' to cell 'IBUFG' [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:117]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 20.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT1_DIVIDE bound to: 40 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.000000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCME2_ADV' [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:128]
+INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:191]
+INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:196]
+INFO: [Synth 8-113] binding component instance 'clkout2_buf' to cell 'BUFG' [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:201]
+INFO: [Synth 8-256] done synthesizing module 'clocking' (10#1) [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_top' (11#1) [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:37]
+WARNING: [Synth 8-3917] design ov7670_top has port LED[7] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[6] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[5] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[4] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[3] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[2] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[1] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:50 ; elapsed = 00:07:29 . Memory (MB): peak = 6171.930 ; gain = 5220.734 ; free physical = 1076 ; free virtual = 9609
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:50 ; elapsed = 00:07:30 . Memory (MB): peak = 6171.930 ; gain = 5220.734 ; free physical = 1076 ; free virtual = 9608
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 27 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/splebuty/Documents/SmartCam/ov7670/ov7670.xdc]
+Finished Parsing XDC File [/home/splebuty/Documents/SmartCam/ov7670/ov7670.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFG => IBUF: 1 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:02:03 ; elapsed = 00:07:39 . Memory (MB): peak = 6478.723 ; gain = 5527.527 ; free physical = 775 ; free virtual = 9317
+44 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:18 . Memory (MB): peak = 6478.723 ; gain = 434.055 ; free physical = 775 ; free virtual = 9317
+launch_runs impl_2
+[Thu Oct 29 17:05:16 2015] Launched impl_2...
+Run output will be captured here: /home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/runme.log
+launch_runs impl_2 -to_step write_bitstream
+[Thu Oct 29 17:07:11 2015] Launched impl_2...
+Run output will be captured here: /home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/ov7670_top.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/splebuty/Documents/SmartCam/ov7670/ov7670.xdc]
+Finished Parsing XDC File [/home/splebuty/Documents/SmartCam/ov7670/ov7670.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 6491.980 ; gain = 4.730 ; free physical = 965 ; free virtual = 9605
+reset_run synth_2
+launch_runs synth_2
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/tb_i2c_sender.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/tb_i2c_sender.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/tb_ov7670_top.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/tb_ov7670_top.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/vga.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/vga.vhd:1]
+[Thu Oct 29 17:51:33 2015] Launched synth_2...
+Run output will be captured here: /home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/synth_2/runme.log
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:05:12 ; elapsed = 00:54:24 . Memory (MB): peak = 6491.980 ; gain = 5540.785 ; free physical = 819 ; free virtual = 9443
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ov7670_top' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:37]
+INFO: [Synth 8-3491] module 'debounce' declared at '/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd:11' bound to instance 'btn_debounce' of component 'debounce' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'debounce' [/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (1#1) [/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd:19]
+INFO: [Synth 8-3491] module 'vga' declared at '/home/splebuty/Documents/SmartCam/ov7670/vga.vhd:11' bound to instance 'Inst_vga' of component 'vga' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'vga' [/home/splebuty/Documents/SmartCam/ov7670/vga.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'vga' (2#1) [/home/splebuty/Documents/SmartCam/ov7670/vga.vhd:24]
+INFO: [Synth 8-3491] module 'dual_framebuffer' declared at '/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:5' bound to instance 'fb' of component 'dual_framebuffer' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'dual_framebuffer' [/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:18]
+INFO: [Synth 8-637] synthesizing blackbox instance 's0' of component 'sync' [/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:61]
+INFO: [Synth 8-3491] module 'frame_buffer' declared at '/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd:5' bound to instance 'fb0' of component 'frame_buffer' [/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'frame_buffer' [/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'frame_buffer' (3#1) [/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd:19]
+INFO: [Synth 8-3491] module 'frame_buffer2' declared at '/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd:5' bound to instance 'fb1' of component 'frame_buffer2' [/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'frame_buffer2' [/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'frame_buffer2' (4#1) [/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'dual_framebuffer' (5#1) [/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:18]
+INFO: [Synth 8-3491] module 'ov7670_capture' declared at '/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd:11' bound to instance 'capture' of component 'ov7670_capture' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'ov7670_capture' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_capture' (6#1) [/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd:23]
+INFO: [Synth 8-3491] module 'ov7670_controller' declared at '/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd:11' bound to instance 'controller' of component 'ov7670_controller' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'ov7670_controller' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd:24]
+INFO: [Synth 8-3491] module 'i2c_sender' declared at '/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd:11' bound to instance 'Inst_i2c_sender' of component 'i2c_sender' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'i2c_sender' [/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'i2c_sender' (7#1) [/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd:24]
+INFO: [Synth 8-3491] module 'ov7670_registers' declared at '/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd:12' bound to instance 'Inst_ov7670_registers' of component 'ov7670_registers' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'ov7670_registers' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_registers' (8#1) [/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_controller' (9#1) [/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd:24]
+INFO: [Synth 8-3491] module 'clocking' declared at '/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:73' bound to instance 'your_instance_name' of component 'clocking' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'clocking' [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:83]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'clkin1_buf' to cell 'IBUFG' [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:117]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 20.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT1_DIVIDE bound to: 40 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.000000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCME2_ADV' [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:128]
+INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:191]
+INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:196]
+INFO: [Synth 8-113] binding component instance 'clkout2_buf' to cell 'BUFG' [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:201]
+INFO: [Synth 8-256] done synthesizing module 'clocking' (10#1) [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_top' (11#1) [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:37]
+WARNING: [Synth 8-3917] design ov7670_top has port LED[7] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[6] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[5] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[4] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[3] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[2] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[1] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:05:15 ; elapsed = 00:54:27 . Memory (MB): peak = 6519.977 ; gain = 5568.781 ; free physical = 749 ; free virtual = 9373
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:05:15 ; elapsed = 00:54:27 . Memory (MB): peak = 6519.977 ; gain = 5568.781 ; free physical = 748 ; free virtual = 9372
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 27 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/splebuty/Documents/SmartCam/ov7670/ov7670.xdc]
+Finished Parsing XDC File [/home/splebuty/Documents/SmartCam/ov7670/ov7670.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 6565.980 ; gain = 74.000 ; free physical = 659 ; free virtual = 9275
+launch_runs impl_2
+[Thu Oct 29 17:52:32 2015] Launched impl_2...
+Run output will be captured here: /home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/runme.log
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/splebuty/Documents/SmartCam/ov7670/ov7670.xdc]
+Finished Parsing XDC File [/home/splebuty/Documents/SmartCam/ov7670/ov7670.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+add_files -norecurse /home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd
+update_compile_order -fileset sources_1
+reset_run synth_2
+launch_runs synth_2
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:1]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "signal". [/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:13]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "if". [/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:19]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/tb_i2c_sender.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/tb_i2c_sender.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/tb_ov7670_top.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/tb_ov7670_top.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/vga.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/vga.vhd:1]
+[Thu Oct 29 17:55:29 2015] Launched synth_2...
+Run output will be captured here: /home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/synth_2/runme.log
+launch_runs impl_2
+[Thu Oct 29 17:56:27 2015] Launched impl_2...
+Run output will be captured here: /home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/runme.log
+reset_run synth_2
+launch_runs synth_2
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:1]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "if". [/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:20]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/tb_i2c_sender.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/tb_i2c_sender.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/tb_ov7670_top.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/tb_ov7670_top.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/vga.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/vga.vhd:1]
+[Thu Oct 29 17:57:38 2015] Launched synth_2...
+Run output will be captured here: /home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/synth_2/runme.log
+reset_run synth_2
+launch_runs synth_2
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:1]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "if". [/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:19]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/tb_i2c_sender.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/tb_i2c_sender.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/tb_ov7670_top.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/tb_ov7670_top.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/vga.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/vga.vhd:1]
+[Thu Oct 29 17:59:32 2015] Launched synth_2...
+Run output will be captured here: /home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/synth_2/runme.log
+reset_run synth_2
+launch_runs synth_2
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:1]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "if". [/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:19]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/tb_i2c_sender.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/tb_i2c_sender.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/tb_ov7670_top.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/tb_ov7670_top.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/vga.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/vga.vhd:1]
+[Thu Oct 29 18:00:08 2015] Launched synth_2...
+Run output will be captured here: /home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/synth_2/runme.log
+launch_runs impl_2
+[Thu Oct 29 18:01:05 2015] Launched impl_2...
+Run output will be captured here: /home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/runme.log
+reset_run synth_2
+launch_runs synth_2
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:1]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "if". [/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:19]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/tb_i2c_sender.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/tb_i2c_sender.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/tb_ov7670_top.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/tb_ov7670_top.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/vga.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/vga.vhd:1]
+[Thu Oct 29 18:03:00 2015] Launched synth_2...
+Run output will be captured here: /home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/synth_2/runme.log
+launch_runs impl_2
+[Thu Oct 29 18:04:00 2015] Launched impl_2...
+Run output will be captured here: /home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/runme.log
+reset_run synth_2
+launch_runs synth_2
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:1]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "if". [/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:19]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/tb_i2c_sender.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/tb_i2c_sender.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/tb_ov7670_top.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/tb_ov7670_top.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/vga.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/vga.vhd:1]
+[Thu Oct 29 18:04:47 2015] Launched synth_2...
+Run output will be captured here: /home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/synth_2/runme.log
+launch_runs impl_2
+[Thu Oct 29 18:05:44 2015] Launched impl_2...
+Run output will be captured here: /home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/runme.log
+reset_run synth_2
+launch_runs synth_2
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:1]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "tclk". [/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:20]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/tb_i2c_sender.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/tb_i2c_sender.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/tb_ov7670_top.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/tb_ov7670_top.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/vga.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/vga.vhd:1]
+[Thu Oct 29 18:06:31 2015] Launched synth_2...
+Run output will be captured here: /home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/synth_2/runme.log
+reset_run synth_2
+launch_runs synth_2
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/tb_i2c_sender.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/tb_i2c_sender.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/tb_ov7670_top.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/tb_ov7670_top.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/vga.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/vga.vhd:1]
+[Thu Oct 29 18:08:44 2015] Launched synth_2...
+Run output will be captured here: /home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/synth_2/runme.log
+reset_run synth_2
+launch_runs synth_2
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/tb_i2c_sender.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/tb_i2c_sender.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/tb_ov7670_top.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/tb_ov7670_top.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/vga.vhd" into library xil_defaultlib [/home/splebuty/Documents/SmartCam/ov7670/vga.vhd:1]
+[Thu Oct 29 18:09:52 2015] Launched synth_2...
+Run output will be captured here: /home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/synth_2/runme.log
+launch_runs impl_2
+[Thu Oct 29 18:10:49 2015] Launched impl_2...
+Run output will be captured here: /home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/runme.log
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:07:20 ; elapsed = 01:13:48 . Memory (MB): peak = 6577.988 ; gain = 5626.793 ; free physical = 495 ; free virtual = 9135
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ov7670_top' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:37]
+INFO: [Synth 8-3491] module 'debounce' declared at '/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd:11' bound to instance 'btn_debounce' of component 'debounce' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'debounce' [/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (1#1) [/home/splebuty/Documents/SmartCam/ov7670/debounce.vhd:19]
+INFO: [Synth 8-3491] module 'vga' declared at '/home/splebuty/Documents/SmartCam/ov7670/vga.vhd:11' bound to instance 'Inst_vga' of component 'vga' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'vga' [/home/splebuty/Documents/SmartCam/ov7670/vga.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'vga' (2#1) [/home/splebuty/Documents/SmartCam/ov7670/vga.vhd:24]
+INFO: [Synth 8-3491] module 'dual_framebuffer' declared at '/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:5' bound to instance 'fb' of component 'dual_framebuffer' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'dual_framebuffer' [/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:18]
+INFO: [Synth 8-3491] module 'sync' declared at '/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:5' bound to instance 's0' of component 'sync' [/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'sync' [/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'sync' (3#1) [/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:13]
+INFO: [Synth 8-3491] module 'frame_buffer' declared at '/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd:5' bound to instance 'fb0' of component 'frame_buffer' [/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'frame_buffer' [/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'frame_buffer' (4#1) [/home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd:19]
+INFO: [Synth 8-3491] module 'frame_buffer2' declared at '/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd:5' bound to instance 'fb1' of component 'frame_buffer2' [/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'frame_buffer2' [/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'frame_buffer2' (5#1) [/home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'dual_framebuffer' (6#1) [/home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd:18]
+INFO: [Synth 8-3491] module 'ov7670_capture' declared at '/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd:11' bound to instance 'capture' of component 'ov7670_capture' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'ov7670_capture' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_capture' (7#1) [/home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd:23]
+INFO: [Synth 8-3491] module 'ov7670_controller' declared at '/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd:11' bound to instance 'controller' of component 'ov7670_controller' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'ov7670_controller' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd:24]
+INFO: [Synth 8-3491] module 'i2c_sender' declared at '/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd:11' bound to instance 'Inst_i2c_sender' of component 'i2c_sender' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'i2c_sender' [/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'i2c_sender' (8#1) [/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd:24]
+INFO: [Synth 8-3491] module 'ov7670_registers' declared at '/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd:12' bound to instance 'Inst_ov7670_registers' of component 'ov7670_registers' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'ov7670_registers' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_registers' (9#1) [/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_controller' (10#1) [/home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd:24]
+INFO: [Synth 8-3491] module 'clocking' declared at '/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:73' bound to instance 'your_instance_name' of component 'clocking' [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'clocking' [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:83]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'clkin1_buf' to cell 'IBUFG' [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:117]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 20.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT1_DIVIDE bound to: 40 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.000000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCME2_ADV' [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:128]
+INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:191]
+INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:196]
+INFO: [Synth 8-113] binding component instance 'clkout2_buf' to cell 'BUFG' [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:201]
+INFO: [Synth 8-256] done synthesizing module 'clocking' (11#1) [/home/splebuty/Documents/SmartCam/ov7670/clocking.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_top' (12#1) [/home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd:37]
+WARNING: [Synth 8-3917] design ov7670_top has port LED[7] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[6] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[5] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[4] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[3] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[2] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[1] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:07:23 ; elapsed = 01:13:50 . Memory (MB): peak = 6577.988 ; gain = 5626.793 ; free physical = 462 ; free virtual = 9102
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:07:23 ; elapsed = 01:13:50 . Memory (MB): peak = 6577.988 ; gain = 5626.793 ; free physical = 460 ; free virtual = 9099
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 27 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/splebuty/Documents/SmartCam/ov7670/ov7670.xdc]
+Finished Parsing XDC File [/home/splebuty/Documents/SmartCam/ov7670/ov7670.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 6588.414 ; gain = 10.426 ; free physical = 439 ; free virtual = 9070
+launch_runs impl_2 -to_step write_bitstream
+[Thu Oct 29 18:12:47 2015] Launched impl_2...
+Run output will be captured here: /home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248690417
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248690417
+set_property PROGRAM.FILE {/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/ov7670_top.bit} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/ov7670_top.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/splebuty/Documents/SmartCam/ov7670/ov7670.xdc]
+Finished Parsing XDC File [/home/splebuty/Documents/SmartCam/ov7670/ov7670.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 29 18:17:22 2015...
