@@ -1,0 +1,896 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Fri Nov 13 01:02:05 2015
+# Process ID: 5600
+# Current directory: C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.runs/synth_2
+# Command line: vivado.exe -log ov7670_top.vds -mode batch -messageDb vivado.pb -notrace -source ov7670_top.tcl
+# Log file: C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.runs/synth_2/ov7670_top.vds
+# Journal file: C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source ov7670_top.tcl -notrace
+Command: synth_design -top ov7670_top -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 260.930 ; gain = 89.590
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ov7670_top' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:37]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/debounce.vhd:11' bound to instance 'btn_debounce' of component 'debounce' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/Julian/Desktop/SmartCam/ov7670/debounce.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (1#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/debounce.vhd:19]
+INFO: [Synth 8-3491] module 'vga' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/vga.vhd:11' bound to instance 'Inst_vga' of component 'vga' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'vga' [C:/Users/Julian/Desktop/SmartCam/ov7670/vga.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'vga' (2#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/vga.vhd:24]
+INFO: [Synth 8-3491] module 'dual_framebuffer' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/dual_framebuffer.vhd:5' bound to instance 'framebuffer' of component 'dual_framebuffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'dual_framebuffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/dual_framebuffer.vhd:18]
+	Parameter width bound to: 262144 - type: integer 
+INFO: [Synth 8-3491] module 'frame_buffer' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/framebuffer.vhd:5' bound to instance 'fb0' of component 'frame_buffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/dual_framebuffer.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'frame_buffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/framebuffer.vhd:20]
+	Parameter width bound to: 262144 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'frame_buffer' (3#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/framebuffer.vhd:20]
+	Parameter width bound to: 45055 - type: integer 
+INFO: [Synth 8-3491] module 'frame_buffer' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/framebuffer.vhd:5' bound to instance 'fb1' of component 'frame_buffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/dual_framebuffer.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'frame_buffer__parameterized1' [C:/Users/Julian/Desktop/SmartCam/ov7670/framebuffer.vhd:20]
+	Parameter width bound to: 45055 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'frame_buffer__parameterized1' (3#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/framebuffer.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'dual_framebuffer' (4#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/dual_framebuffer.vhd:18]
+INFO: [Synth 8-3491] module 'ov7670_capture' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_capture.vhd:11' bound to instance 'capture' of component 'ov7670_capture' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:187]
+INFO: [Synth 8-638] synthesizing module 'ov7670_capture' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_capture.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_capture' (5#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_capture.vhd:23]
+INFO: [Synth 8-3491] module 'ov7670_controller' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_controller.vhd:11' bound to instance 'controller' of component 'ov7670_controller' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:198]
+INFO: [Synth 8-638] synthesizing module 'ov7670_controller' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_controller.vhd:24]
+INFO: [Synth 8-3491] module 'i2c_sender' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/i2c_sender.vhd:11' bound to instance 'Inst_i2c_sender' of component 'i2c_sender' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_controller.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'i2c_sender' [C:/Users/Julian/Desktop/SmartCam/ov7670/i2c_sender.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'i2c_sender' (6#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/i2c_sender.vhd:24]
+INFO: [Synth 8-3491] module 'ov7670_registers' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_registers.vhd:12' bound to instance 'Inst_ov7670_registers' of component 'ov7670_registers' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_controller.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'ov7670_registers' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_registers.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_registers' (7#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_registers.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_controller' (8#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_controller.vhd:24]
+INFO: [Synth 8-3491] module 'clocking' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/clocking.vhd:73' bound to instance 'your_instance_name' of component 'clocking' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:211]
+INFO: [Synth 8-638] synthesizing module 'clocking' [C:/Users/Julian/Desktop/SmartCam/ov7670/clocking.vhd:83]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'clkin1_buf' to cell 'IBUFG' [C:/Users/Julian/Desktop/SmartCam/ov7670/clocking.vhd:117]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 20.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT1_DIVIDE bound to: 40 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.000000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCME2_ADV' [C:/Users/Julian/Desktop/SmartCam/ov7670/clocking.vhd:128]
+INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [C:/Users/Julian/Desktop/SmartCam/ov7670/clocking.vhd:191]
+INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [C:/Users/Julian/Desktop/SmartCam/ov7670/clocking.vhd:196]
+INFO: [Synth 8-113] binding component instance 'clkout2_buf' to cell 'BUFG' [C:/Users/Julian/Desktop/SmartCam/ov7670/clocking.vhd:201]
+INFO: [Synth 8-256] done synthesizing module 'clocking' (9#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/clocking.vhd:83]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:5' bound to instance 'synchronize' of component 'sync' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:220]
+INFO: [Synth 8-638] synthesizing module 'sync' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'sync' (10#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:13]
+	Parameter m_width bound to: 3 - type: integer 
+	Parameter i_width bound to: 640 - type: integer 
+	Parameter d_width bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'fullbuffer' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:5' bound to instance 'fl_buffer' of component 'fullbuffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:227]
+INFO: [Synth 8-638] synthesizing module 'fullbuffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:19]
+	Parameter m_width bound to: 3 - type: integer 
+	Parameter i_width bound to: 640 - type: integer 
+	Parameter d_width bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'rgbconverter' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/rgbconverter.vhd:5' bound to instance 'rgb2grey' of component 'rgbconverter' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'rgbconverter' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/rgbconverter.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'rgbconverter' (11#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/rgbconverter.vhd:12]
+INFO: [Synth 8-3491] module 'shiftreg3' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:5' bound to instance 'sreg0' of component 'shiftreg3' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'shiftreg3' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:17]
+INFO: [Synth 8-3491] module 'reg' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/reg.vhd:5' bound to instance 'reg0' of component 'reg' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:35]
+INFO: [Synth 8-638] synthesizing module '\reg ' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/reg.vhd:13]
+INFO: [Synth 8-256] done synthesizing module '\reg ' (12#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/reg.vhd:13]
+INFO: [Synth 8-3491] module 'reg' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/reg.vhd:5' bound to instance 'regx' of component 'reg' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:39]
+INFO: [Synth 8-3491] module 'reg' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/reg.vhd:5' bound to instance 'regx' of component 'reg' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'shiftreg3' (13#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:17]
+INFO: [Synth 8-3491] module 'shiftreg3' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:5' bound to instance 'sregx' of component 'shiftreg3' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:96]
+INFO: [Synth 8-3491] module 'shiftreg3' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:5' bound to instance 'sregx' of component 'shiftreg3' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:96]
+	Parameter width bound to: 637 - type: integer 
+INFO: [Synth 8-3491] module 'linebuffer' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/linebuffer.vhd:5' bound to instance 'lbx' of component 'linebuffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'linebuffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/linebuffer.vhd:16]
+	Parameter width bound to: 637 - type: integer 
+	Parameter width bound to: 637 - type: integer 
+INFO: [Synth 8-3491] module 'frame_buffer' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/framebuffer.vhd:5' bound to instance 'fb' of component 'frame_buffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/linebuffer.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'frame_buffer__parameterized3' [C:/Users/Julian/Desktop/SmartCam/ov7670/framebuffer.vhd:20]
+	Parameter width bound to: 637 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'frame_buffer__parameterized3' (13#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/framebuffer.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'linebuffer' (14#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/linebuffer.vhd:16]
+	Parameter width bound to: 637 - type: integer 
+INFO: [Synth 8-3491] module 'linebuffer' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/linebuffer.vhd:5' bound to instance 'lbx' of component 'linebuffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:111]
+INFO: [Synth 8-3491] module 'sobel_filter' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd:13' bound to instance 'sobelx' of component 'sobel_filter' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'sobel_filter' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd:26]
+INFO: [Synth 8-3491] module 'Add2' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add2.vhd:5' bound to instance 'add01' of component 'Add2' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'Add2' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add2.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Add2' (15#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add2.vhd:13]
+INFO: [Synth 8-3491] module 'Add2' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add2.vhd:5' bound to instance 'add02' of component 'Add2' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd:63]
+INFO: [Synth 8-3491] module 'Add2' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add2.vhd:5' bound to instance 'add03' of component 'Add2' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd:69]
+INFO: [Synth 8-3491] module 'Add3' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add3.vhd:5' bound to instance 'add04' of component 'Add3' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'Add3' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add3.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Add3' (16#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add3.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'sobel_filter' (17#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd:26]
+INFO: [Synth 8-3491] module 'sobel_filter' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd:13' bound to instance 'sobely' of component 'sobel_filter' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:128]
+INFO: [Synth 8-256] done synthesizing module 'fullbuffer' (18#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_top' (19#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:37]
+WARNING: [Synth 8-3917] design ov7670_top has port LED[7] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[6] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[5] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[4] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[3] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[2] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[1] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 347.672 ; gain = 176.332
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 347.672 ; gain = 176.332
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670.xdc]
+Finished Parsing XDC File [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ov7670_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ov7670_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFG => IBUF: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 613.457 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 613.457 ; gain = 442.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 613.457 ; gain = 442.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 613.457 ; gain = 442.117
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "taken" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_sr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "divider" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "finished" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:139]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:139]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 613.457 ; gain = 442.117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 6     
+	   3 Input     12 Bit       Adders := 2     
+	   4 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 4     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 14    
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---RAMs : 
+	            3072K Bit         RAMs := 1     
+	             527K Bit         RAMs := 1     
+	               7K Bit         RAMs := 2     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module vga 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module frame_buffer 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---RAMs : 
+	            3072K Bit         RAMs := 1     
+Module frame_buffer__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---RAMs : 
+	             527K Bit         RAMs := 1     
+Module dual_framebuffer 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module ov7670_capture 
+Detailed RTL Component Info : 
++---Registers : 
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module i2c_sender 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+Module ov7670_registers 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module ov7670_controller 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module sync 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module rgbconverter 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      4 Bit       Adders := 1     
+Module Add2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+Module Add3 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 1     
+Module frame_buffer__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---RAMs : 
+	               7K Bit         RAMs := 1     
+Module reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+Module fullbuffer 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     12 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 613.457 ; gain = 442.117
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "controller/Inst_i2c_sender/divider" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "controller/Inst_i2c_sender/taken" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "controller/Inst_ov7670_registers/finished" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design ov7670_top has port OV7670_RESET driven by constant 1
+WARNING: [Synth 8-3917] design ov7670_top has port OV7670_PWDN driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[7] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[6] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[5] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[4] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[3] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[2] driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_top has port LED[1] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 613.457 ; gain = 442.117
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 613.457 ; gain = 442.117
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+INFO: [Synth 8-4652] Swapped enable and write-enable on 12 RAM instances of RAM framebuffer/fb1/RAM_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM fl_buffer/line_buff[0].lbx/fb/RAM_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM fl_buffer/line_buff[1].lbx/fb/RAM_reg to conserve power
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-----------------+------------+---------------+----------------+
+|Module Name      | RTL Object | Depth x Width | Implemented As | 
++-----------------+------------+---------------+----------------+
+|ov7670_registers | extrom     | 256x16        | Block RAM      | 
+|ov7670_top       | extrom     | 256x16        | Block RAM      | 
++-----------------+------------+---------------+----------------+
+
+
+Block RAM:
++------------+---------------------------------------+------------------------+---+---+-------------------------+---+---+--------------+--------+--------+-----------------------+
+|Module Name | RTL Object                            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width)  | W | R | OUT_REG      | RAMB18 | RAMB36 | Hierarchical Name     | 
++------------+---------------------------------------+------------------------+---+---+-------------------------+---+---+--------------+--------+--------+-----------------------+
+|ov7670_top  | framebuffer/fb0/RAM_reg               | 256 K x 12             | W |   | 256 K x 12(WRITE_FIRST) |   | R | Port A and B | 0      | 96     | ov7670_top/extram__5  | 
+|ov7670_top  | framebuffer/fb1/RAM_reg               | 64 K x 12              | W |   | 64 K x 12(WRITE_FIRST)  |   | R | Port A and B | 0      | 24     | ov7670_top/extram__7  | 
+|ov7670_top  | fl_buffer/line_buff[0].lbx/fb/RAM_reg | 1 K x 12(READ_FIRST)   | W |   | 1 K x 12(WRITE_FIRST)   |   | R | Port A and B | 1      | 0      | ov7670_top/extram__9  | 
+|ov7670_top  | fl_buffer/line_buff[1].lbx/fb/RAM_reg | 1 K x 12(READ_FIRST)   | W |   | 1 K x 12(WRITE_FIRST)   |   | R | Port A and B | 1      | 0      | ov7670_top/extram__11 | 
++------------+---------------------------------------+------------------------+---+---+-------------------------+---+---+--------------+--------+--------+-----------------------+
+
+Note: The table above shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. "Hierarchical Name" reflects the Block RAM name as it appears in the hierarchical module and only part of it is displayed.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\controller/Inst_i2c_sender/data_sr_reg[0] )
+INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[0] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[4] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[1] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[5] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[2] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[6] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[3] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[7] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[4] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[8] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[5] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[9] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[6] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[10] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[7] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[11] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[11] )
+INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[0] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[4] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[1] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[5] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[2] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[6] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[3] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[7] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[4] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[8] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[5] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[9] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[6] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[10] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[7] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[11] '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__47 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__23 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__48 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__24 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__0 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__49 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__25 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__1 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__50 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__26 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__2 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__51 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__27 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__3 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__52 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__28 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__4 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__53 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__29 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__5 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__54 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__30 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__6 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__55 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__31 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__7 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__56 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__32 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__8 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__57 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__33 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__9 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__34 '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[0] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[4] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[1] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[5] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[2] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[6] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[3] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[7] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[4] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[8] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[5] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[9] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[6] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[10] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[7] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[11] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[11] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[11] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[11] )
+INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[11] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[11] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[11] )
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__0 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__1 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__2 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__3 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__4 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__5 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__6 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__7 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__8 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__9 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__11 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__12 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__13 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__14 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__15 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__16 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__17 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__18 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__19 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__20 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__21 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__22 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__23 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__24 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__25 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__26 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__27 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__28 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__29 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__30 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__31 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__32 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__33 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__35 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__36 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__37 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__38 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__39 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__40 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__41 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__42 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__43 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__44 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__45 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__46 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__47 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__48 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__49 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__50 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__51 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__52 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__53 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__54 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__55 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__56 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__57 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__58 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\controller/Inst_i2c_sender/data_sr_reg[0] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\capture/d_latch_reg[11] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[7] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[6] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[5] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[4] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[3] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[2] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[1] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[0] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[7] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[6] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[5] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[4] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[3] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[2] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[1] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[0] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[7] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[6] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[5] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[4] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[3] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[2] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[1] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[0] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[11] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[11] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[11] ) is unused and will be removed from module ov7670_top.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 613.457 ; gain = 442.117
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 613.457 ; gain = 442.117
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 613.457 ; gain = 442.117
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__47 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__23 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__48 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__24 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__0 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__49 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__25 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__1 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__50 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__26 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__2 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__51 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__27 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__3 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__52 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__28 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__4 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__53 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__29 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__5 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__54 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__30 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__6 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__55 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__31 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__7 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__56 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__32 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__8 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__57 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__33 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__9 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
+INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__34 '
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__0 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__1 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__2 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__3 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__4 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__5 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__6 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__7 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__8 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__9 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__11 ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__12 ) is unused and will be removed from module ov7670_top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 616.152 ; gain = 444.813
+---------------------------------------------------------------------------------
+Finished Parallel Timing Optimization  : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 616.152 ; gain = 444.813
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 616.152 ; gain = 444.813
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_1_0  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_1_1  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_1_2  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_1_3  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_1_4  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_1_5  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_1_6  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_1_7  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_1_8  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_1_9  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_1_10  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_1_11  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_3_0  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_3_1  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_3_2  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_3_3  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_3_4  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_3_5  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_3_6  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_3_7  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_3_8  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_3_9  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_3_10  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_3_11  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_5_0  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_5_1  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_5_2  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_5_3  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_5_4  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_5_5  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_5_6  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_5_7  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_5_8  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_5_9  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_5_10  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_5_11  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_7_0  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_7_1  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_7_2  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_7_3  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_7_4  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_7_5  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_7_6  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_7_7  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_7_8  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_7_9  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_7_10  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb0/RAM_reg_7_11  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb1/RAM_reg_1_0  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb1/RAM_reg_1_1  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb1/RAM_reg_1_2  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb1/RAM_reg_1_3  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb1/RAM_reg_1_4  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb1/RAM_reg_1_5  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb1/RAM_reg_1_6  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb1/RAM_reg_1_7  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb1/RAM_reg_1_8  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb1/RAM_reg_1_9  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb1/RAM_reg_1_10  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb1/RAM_reg_1_11  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \controller/Inst_ov7670_registers/sreg_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 628.027 ; gain = 456.688
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 628.027 ; gain = 456.688
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 628.027 ; gain = 456.688
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 628.027 ; gain = 456.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 628.027 ; gain = 456.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 628.027 ; gain = 456.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 628.027 ; gain = 456.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     5|
+|2     |CARRY4     |    86|
+|3     |LUT1       |   227|
+|4     |LUT2       |   139|
+|5     |LUT3       |    44|
+|6     |LUT4       |    65|
+|7     |LUT5       |    14|
+|8     |LUT6       |    68|
+|9     |MMCME2_ADV |     1|
+|10    |RAMB18E1   |     2|
+|11    |RAMB18E1_1 |     1|
+|12    |RAMB36E1   |    60|
+|13    |RAMB36E1_1 |    60|
+|14    |FDRE       |   468|
+|15    |FDSE       |    31|
+|16    |IBUF       |    12|
+|17    |IBUFG      |     1|
+|18    |OBUF       |    26|
+|19    |OBUFT      |     1|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-------------------------------+-------------------------------+------+
+|      |Instance                       |Module                         |Cells |
++------+-------------------------------+-------------------------------+------+
+|1     |top                            |                               |  1311|
+|2     |  Inst_vga                     |vga                            |   191|
+|3     |  btn_debounce                 |debounce                       |    61|
+|4     |  capture                      |ov7670_capture                 |   168|
+|5     |  controller                   |ov7670_controller              |   181|
+|6     |    Inst_i2c_sender            |i2c_sender                     |   145|
+|7     |    Inst_ov7670_registers      |ov7670_registers               |    34|
+|8     |  fl_buffer                    |fullbuffer                     |   412|
+|9     |    \line_buff[0].lbx          |linebuffer                     |   115|
+|10    |      fb                       |frame_buffer__parameterized3_9 |    21|
+|11    |    \line_buff[1].lbx          |linebuffer_0                   |   126|
+|12    |      fb                       |frame_buffer__parameterized3   |    32|
+|13    |    \shift_reg[0].first.sreg0  |shiftreg3                      |    75|
+|14    |      \gen_reg[0].first.reg0   |reg_6                          |    27|
+|15    |      \gen_reg[1].other.regx   |reg_7                          |    21|
+|16    |      \gen_reg[2].other.regx   |reg_8                          |    27|
+|17    |    \shift_reg[1].other.sregx  |shiftreg3_1                    |    40|
+|18    |      \gen_reg[1].other.regx   |reg_4                          |    12|
+|19    |      \gen_reg[2].other.regx   |reg_5                          |    28|
+|20    |    \shift_reg[2].other.sregx  |shiftreg3_2                    |    56|
+|21    |      \gen_reg[1].other.regx   |\reg                           |    28|
+|22    |      \gen_reg[2].other.regx   |reg_3                          |    28|
+|23    |  framebuffer                  |dual_framebuffer               |   172|
+|24    |    fb0                        |frame_buffer                   |   136|
+|25    |    fb1                        |frame_buffer__parameterized1   |    36|
+|26    |  synchronize                  |sync                           |     3|
+|27    |  your_instance_name           |clocking                       |     5|
++------+-------------------------------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 628.027 ; gain = 456.688
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 154 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 628.027 ; gain = 174.203
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 628.027 ; gain = 456.688
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 223 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFG => IBUF: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+262 Infos, 116 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 628.027 ; gain = 439.988
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 628.027 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 13 01:02:55 2015...

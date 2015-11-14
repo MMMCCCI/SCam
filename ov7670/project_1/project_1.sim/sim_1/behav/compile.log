@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity i2c_sender
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/splebuty/Documents/SmartCam/ov7670/tb_i2c_sender.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_i2c_sender

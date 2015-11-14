@@ -1,0 +1,194 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:39 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Thu Oct 29 12:56:31 2015
+# Process ID: 28070
+# Current directory: /home/splebuty/Documents/SmartCam/ov7670
+# Command line: vivado
+# Log file: /home/splebuty/Documents/SmartCam/ov7670/vivado.log
+# Journal file: /home/splebuty/Documents/SmartCam/ov7670/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project project_1 /home/splebuty/Documents/SmartCam/ov7670/project_1 -part xc7vx485tffg1157-1
+add_files -norecurse {/home/splebuty/Documents/SmartCam/ov7670/ov7670_registers.vhd /home/splebuty/Documents/SmartCam/ov7670/ov7670_top.vhd /home/splebuty/Documents/SmartCam/ov7670/debounce.vhd /home/splebuty/Documents/SmartCam/ov7670/tb_i2c_sender.vhd /home/splebuty/Documents/SmartCam/ov7670/vga.vhd /home/splebuty/Documents/SmartCam/ov7670/framebuffer.vhd /home/splebuty/Documents/SmartCam/ov7670/tb_ov7670_top.vhd /home/splebuty/Documents/SmartCam/ov7670/i2c_sender.vhd /home/splebuty/Documents/SmartCam/ov7670/ov7670_controller.vhd /home/splebuty/Documents/SmartCam/ov7670/clocking.vhd /home/splebuty/Documents/SmartCam/ov7670/ov7670_capture.vhd}
+add_files -fileset constrs_1 -norecurse /home/splebuty/Documents/SmartCam/ov7670/ov7670.xdc
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ov7670_top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+add_files -norecurse /home/splebuty/Documents/SmartCam/ov7670/dual_framebuffer.vhd
+update_compile_order -fileset sources_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+create_run synth_2 -flow {Vivado Synthesis 2015} -strategy {Vivado Synthesis Defaults}
+current_run [get_runs synth_2]
+set_property board_part em.avnet.com:zed:part0:1.3 [current_project]
+set_property target_language VHDL [current_project]
+launch_runs synth_2
+wait_on_run synth_2
+launch_runs impl_2
+wait_on_run impl_2
+reset_run impl_2 -noclean_dir 
+reset_run synth_2
+launch_runs synth_2
+wait_on_run synth_2
+reset_run synth_2
+launch_runs synth_2
+wait_on_run synth_2
+synth_design -rtl -name rtl_1
+reset_run synth_2
+launch_runs synth_2
+wait_on_run synth_2
+reset_run synth_2
+launch_runs synth_2
+wait_on_run synth_2
+reset_run synth_2
+launch_runs synth_2
+wait_on_run synth_2
+reset_run synth_2
+launch_runs synth_2
+wait_on_run synth_2
+reset_run synth_2
+launch_runs synth_2
+wait_on_run synth_2
+reset_run synth_2
+launch_runs synth_2
+wait_on_run synth_2
+refresh_design
+launch_runs impl_2
+wait_on_run impl_2
+refresh_design
+reset_run impl_2
+launch_runs impl_2
+wait_on_run impl_2
+reset_run impl_2 -noclean_dir 
+reset_run synth_2
+launch_runs synth_2
+wait_on_run synth_2
+launch_runs impl_2
+wait_on_run impl_2
+add_files -norecurse /home/splebuty/Documents/SmartCam/ov7670/framebuffer2.vhd
+update_compile_order -fileset sources_1
+reset_run synth_2
+launch_runs synth_2
+wait_on_run synth_2
+refresh_design
+launch_runs impl_2
+wait_on_run impl_2
+refresh_design
+reset_run synth_2
+launch_runs synth_2
+wait_on_run synth_2
+open_hw
+launch_runs impl_2
+wait_on_run impl_2
+open_run synth_2 -name synth_2
+report_utilization -name utilization_1
+current_design rtl_1
+refresh_design
+reset_run synth_2
+launch_runs synth_2
+wait_on_run synth_2
+launch_runs impl_2
+wait_on_run impl_2
+reset_run impl_2 -noclean_dir 
+launch_runs impl_2
+wait_on_run impl_2
+reset_run impl_2 -noclean_dir 
+reset_run synth_2
+launch_runs synth_2
+wait_on_run synth_2
+launch_runs impl_2
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/ov7670_top.bit} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/ov7670_top.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+reset_run synth_2
+launch_runs synth_2
+wait_on_run synth_2
+launch_runs impl_2
+current_design synth_2
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+set_property PROBES.FILE {} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/ov7670_top.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+reset_run synth_2
+launch_runs synth_2
+wait_on_run synth_2
+launch_runs impl_2
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+set_property PROBES.FILE {} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/ov7670_top.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+reset_run synth_2
+launch_runs synth_2
+wait_on_run synth_2
+reset_run synth_2
+launch_runs synth_2
+wait_on_run synth_2
+reset_run synth_2
+launch_runs synth_2
+wait_on_run synth_2
+launch_runs impl_2
+wait_on_run impl_2
+delete_runs "synth_1"
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+set_property PROBES.FILE {} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/ov7670_top.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/ov7670_top.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {/home/splebuty/Documents/SmartCam/ov7670/project_1/project_1.runs/impl_2/ov7670_top.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+connect_hw_server
+connect_hw_server
+connect_hw_server
+connect_hw_server
+connect_hw_server

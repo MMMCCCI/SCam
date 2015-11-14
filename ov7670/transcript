@@ -1,0 +1,53 @@
+# //  Questa Sim-64
+# //  Version 10.4 linux_x86_64 Dec  2 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# do sim_sync.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vcom 10.4 Compiler 2014.12 Dec  2 2014
+# Start time: 18:40:48 on Nov 12,2015
+# vcom -reportprogress 300 -93 -explicit sync.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sync
+# -- Compiling architecture func of sync
+# End time: 18:40:48 on Nov 12,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.4 Compiler 2014.12 Dec  2 2014
+# Start time: 18:40:48 on Nov 12,2015
+# vcom -reportprogress 300 -93 -explicit tb_sync.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sync
+# -- Compiling architecture behavioral of tb_sync
+# End time: 18:40:48 on Nov 12,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -do "sim_sync.tcl" 
+# Start time: 18:40:48 on Nov 12,2015
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing /home/splebuty/Documents/SmartCam/ov7670/work.tb_sync(behavioral)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_sync(behavioral)
+# Refreshing /home/splebuty/Documents/SmartCam/ov7670/work.sync(func)
+# Loading work.sync(func)
+# .main_pane.wave.interior.cs.body.pw.wf
+# End time: 18:43:20 on Nov 12,2015, Elapsed time: 0:02:32
+# Errors: 0, Warnings: 1
