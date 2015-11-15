@@ -115,9 +115,8 @@ architecture Behavioral of ov7670_top is
    end component;
    
    component fullbuffer is
-           generic (m_width  : integer := 3;
-                    i_width  : integer := 640;
-                    d_width  : integer := 12);
+           generic (matrix_width  : integer := 3;
+                    image_width  : integer := 640);
            port (
                din   : in std_logic_vector(11 downto 0);
                we    : in std_logic;
@@ -147,7 +146,7 @@ architecture Behavioral of ov7670_top is
     ---------------------------------------------------------------------------------------------------------------------------------//
   signal valid   : std_logic;
   signal flb_out : std_logic_vector(11 downto 0);
-  
+  --------------------------------------------------------
 
 begin
 
@@ -225,7 +224,8 @@ begin
         );
     
     fl_buffer : fullbuffer 
-        generic map (m_width => 3, i_width => 640, d_width => 12) port map (
+        generic map (matrix_width => 3, image_width => 640)
+        port map (
             din   => capture_data,
             we    => capture_we,
             clk   => clk50,

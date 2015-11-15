@@ -1,41 +1,43 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
+use work.p.all;
 
 entity fullbuffer is
-    generic (m_width  : integer := 3;
-             i_width  : integer := 640;
-             d_width  : integer := 12);
+    generic (matrix_width  : integer := 3;
+             image_width  : integer := 640);
     port (
-        din   : in std_logic_vector(11 downto 0);
-        we    : in std_logic;
         clk   : in std_logic;
+        we    : in std_logic;
         valid : in std_logic;
         
-        dout : out std_logic_vector(11 downto 0)    
-    );
+        din   : in std_logic_vector(11 downto 0);
+        
+        dout : out std_logic_vector(11 downto 0));
+        
 end fullbuffer;
 
 architecture func of fullbuffer is
+  
+  type l_type is array (matrix_width-2 downto 0) of std_logic_vector (11 downto 0);
+  signal lb_out: l_type;
+  
+  type two_dim_arr is array (matrix_width-1 downto 0) of port_array (matrix_width-1 downto 0);
+  signal arrays: two_dim_arr;
+  
+  signal gout : std_logic_vector(11 downto 0); 
+  signal soutx : std_logic_vector(11 downto 0); 
+  signal souty : std_logic_vector(11 downto 0); 
 
-  type m_type is array (m_width-1 downto 0) of std_logic_vector (11 downto 0);
-  signal m_q: m_type;
-  type l_type is array (m_width-2 downto 0) of std_logic_vector (11 downto 0);
-  signal l_q: l_type;  
-  type q_type is array (8 downto 0) of std_logic_vector (11 downto 0);
-  signal m_q9: q_type;
-
-  component shiftreg3 is
-  Port (
-    din  : in  std_logic_vector(11 downto 0);
-    q1   : out std_logic_vector(11 downto 0); 
-    q2   : out std_logic_vector(11 downto 0);
-    q3   : out std_logic_vector(11 downto 0); 
-    
-    clk  : in  std_logic;
-    we   : in  std_logic
- 
-  );
+  component shiftregister is
+    generic (width : integer := 3);
+    Port (
+      clk  : in  std_logic;
+      we   : in  std_logic;
+      
+      din  : in  std_logic_vector(11 downto 0); 
+      dout : out port_array(width-1 downto 0)
+    );
   end component;
   
   component linebuffer is
@@ -52,89 +54,83 @@ architecture func of fullbuffer is
   component rgbconverter is
     Port (
        din  : in std_logic_vector(11 downto 0);
+       
        dout : out std_logic_vector(11 downto 0)
     );
   end component;
   
   component sobel_filter is
     Port ( 
-          din1 : in std_logic_vector(11 downto 0); --  1
-          din2 : in std_logic_vector(11 downto 0); -- -1
-          din3 : in std_logic_vector(11 downto 0); --  2
-          din4 : in std_logic_vector(11 downto 0); -- -2
-          din5 : in std_logic_vector(11 downto 0); --  1 
-          din6 : in std_logic_vector(11 downto 0); -- -1
+          clk : in std_logic;
+    
+          l_o : in std_logic_vector(11 downto 0); --  1
+          r_o : in std_logic_vector(11 downto 0); -- -1
+          l_m : in std_logic_vector(11 downto 0); --  2
+          r_m : in std_logic_vector(11 downto 0); -- -2
+          l_u : in std_logic_vector(11 downto 0); --  1 
+          r_u : in std_logic_vector(11 downto 0); -- -1
           
           dout : out std_logic_vector(11 downto 0)
     );
   end component;
-  
-  signal gout : std_logic_vector(11 downto 0); 
-  signal soutx : std_logic_vector(11 downto 0); 
-  signal souty : std_logic_vector(11 downto 0); 
 
 begin
     rgb2grey : rgbconverter port map (
         din  => din,
-        dout => gout
-    );
+        dout => gout);
  
     shift_reg: 
-       for i in 0 to m_width-1 generate
-          first: if( i=0) generate 
-          sreg0: shiftreg3 port map (
-                  din  => gout,
-                  q1   => m_q9(0),
-                  q2   => m_q9(1),
-                  q3   => m_q9(2),
+       for i in 0 to matrix_width-1 generate
+          first: if(i = 0) generate 
+          sreg0: shiftregister port map (
                   clk  => valid,
-                  we   => we
-          );
+                  we   => we,
+                  din  => gout,
+                  dout => arrays(i));
           end generate first;
           
           other: if(i > 0) generate
-          sregx : shiftreg3 port map ( 
-            din  => l_q(i-1),
-            q1   => m_q9((i*3)),
-            q2   => m_q9((i*3)+1),
-            q3   => m_q9((i*3)+2),
+          sregx : shiftregister port map ( 
             clk  => valid,
-            we   => we
-          );
+            we   => we,
+            din  => lb_out(i-1),
+            dout => arrays(i));
           end generate other;
           
        end generate shift_reg;
        
-       
       line_buff: 
-        for i in 0 to m_width-2 generate
-           lbx : linebuffer generic map(width => i_width-m_width) port map (
+        for i in 0 to matrix_width-2 generate
+           lbx : linebuffer generic map(width => image_width-matrix_width) port map (
                 clk  => valid,
                 we   => we,
-                din  => m_q9(i*3),
-                dout => l_q(i));
+                din  => arrays(i)(2),
+                dout => lb_out(i));
         end generate line_buff;
         
-       sobelx: sobel_filter port map(
-            din1 => m_q9(0),
-            din2 => m_q9(2),
-            din3 => m_q9(3),
-            din4 => m_q9(5),
-            din5 => m_q9(6),
-            din6 => m_q9(8),
+        sobelx: sobel_filter port map(
+            clk => clk,
+        
+            l_o => arrays(0)(0),
+            r_o => arrays(0)(2),
+            l_m => arrays(1)(0),
+            r_m => arrays(1)(2),
+            l_u => arrays(2)(0),
+            r_u => arrays(2)(2),
             
-            dout => soutx
-       );
+            dout => soutx);
+       
        sobely: sobel_filter port map(
-                   din1 => m_q9(0),
-                   din2 => m_q9(6),
-                   din3 => m_q9(1),
-                   din4 => m_q9(7),
-                   din5 => m_q9(2),
-                   din6 => m_q9(8),
+            clk => clk,
+            
+            l_o => arrays(0)(2),
+            r_o => arrays(2)(2),
+            l_m => arrays(0)(1),
+            r_m => arrays(2)(1),
+            l_u => arrays(0)(0),
+            r_u => arrays(2)(0),
                    
-                   dout => souty
-              );
+            dout => souty);
        
        dout <= std_logic_vector(abs(signed(soutx)) + abs(signed(souty)));
        

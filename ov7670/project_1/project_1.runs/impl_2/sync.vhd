@@ -6,6 +6,7 @@ entity sync is
   port (
     pclk  : in std_logic;
     clk   : in std_logic;
+    
     valid : out std_logic
     );
 end;

@@ -14,32 +14,32 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 260.930 ; gain = 89.590
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 260.668 ; gain = 89.344
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'ov7670_top' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:37]
-INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/debounce.vhd:11' bound to instance 'btn_debounce' of component 'debounce' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:154]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/debounce.vhd:11' bound to instance 'btn_debounce' of component 'debounce' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:153]
 INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/Julian/Desktop/SmartCam/ov7670/debounce.vhd:19]
 INFO: [Synth 8-256] done synthesizing module 'debounce' (1#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/debounce.vhd:19]
-INFO: [Synth 8-3491] module 'vga' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/vga.vhd:11' bound to instance 'Inst_vga' of component 'vga' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:161]
+INFO: [Synth 8-3491] module 'vga' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/vga.vhd:11' bound to instance 'Inst_vga' of component 'vga' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:160]
 INFO: [Synth 8-638] synthesizing module 'vga' [C:/Users/Julian/Desktop/SmartCam/ov7670/vga.vhd:24]
 INFO: [Synth 8-256] done synthesizing module 'vga' (2#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/vga.vhd:24]
-INFO: [Synth 8-3491] module 'dual_framebuffer' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/dual_framebuffer.vhd:5' bound to instance 'framebuffer' of component 'dual_framebuffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:173]
-INFO: [Synth 8-638] synthesizing module 'dual_framebuffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/dual_framebuffer.vhd:18]
+INFO: [Synth 8-3491] module 'dual_framebuffer' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/dual_framebuffer.vhd:5' bound to instance 'framebuffer' of component 'dual_framebuffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'dual_framebuffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/dual_framebuffer.vhd:20]
 	Parameter width bound to: 262144 - type: integer 
-INFO: [Synth 8-3491] module 'frame_buffer' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/framebuffer.vhd:5' bound to instance 'fb0' of component 'frame_buffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/dual_framebuffer.vhd:41]
-INFO: [Synth 8-638] synthesizing module 'frame_buffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/framebuffer.vhd:20]
+INFO: [Synth 8-3491] module 'frame_buffer' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/framebuffer.vhd:5' bound to instance 'fb0' of component 'frame_buffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/dual_framebuffer.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'frame_buffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/framebuffer.vhd:22]
 	Parameter width bound to: 262144 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'frame_buffer' (3#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/framebuffer.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'frame_buffer' (3#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/framebuffer.vhd:22]
 	Parameter width bound to: 45055 - type: integer 
 INFO: [Synth 8-3491] module 'frame_buffer' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/framebuffer.vhd:5' bound to instance 'fb1' of component 'frame_buffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/dual_framebuffer.vhd:49]
-INFO: [Synth 8-638] synthesizing module 'frame_buffer__parameterized1' [C:/Users/Julian/Desktop/SmartCam/ov7670/framebuffer.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'frame_buffer__parameterized1' [C:/Users/Julian/Desktop/SmartCam/ov7670/framebuffer.vhd:22]
 	Parameter width bound to: 45055 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'frame_buffer__parameterized1' (3#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/framebuffer.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'dual_framebuffer' (4#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/dual_framebuffer.vhd:18]
-INFO: [Synth 8-3491] module 'ov7670_capture' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_capture.vhd:11' bound to instance 'capture' of component 'ov7670_capture' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:187]
+INFO: [Synth 8-256] done synthesizing module 'frame_buffer__parameterized1' (3#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/framebuffer.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'dual_framebuffer' (4#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/dual_framebuffer.vhd:20]
+INFO: [Synth 8-3491] module 'ov7670_capture' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_capture.vhd:11' bound to instance 'capture' of component 'ov7670_capture' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:186]
 INFO: [Synth 8-638] synthesizing module 'ov7670_capture' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_capture.vhd:23]
 INFO: [Synth 8-256] done synthesizing module 'ov7670_capture' (5#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_capture.vhd:23]
-INFO: [Synth 8-3491] module 'ov7670_controller' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_controller.vhd:11' bound to instance 'controller' of component 'ov7670_controller' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:198]
+INFO: [Synth 8-3491] module 'ov7670_controller' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_controller.vhd:11' bound to instance 'controller' of component 'ov7670_controller' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:197]
 INFO: [Synth 8-638] synthesizing module 'ov7670_controller' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_controller.vhd:24]
 INFO: [Synth 8-3491] module 'i2c_sender' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/i2c_sender.vhd:11' bound to instance 'Inst_i2c_sender' of component 'i2c_sender' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_controller.vhd:61]
 INFO: [Synth 8-638] synthesizing module 'i2c_sender' [C:/Users/Julian/Desktop/SmartCam/ov7670/i2c_sender.vhd:24]
@@ -48,7 +48,7 @@ INFO: [Synth 8-3491] module 'ov7670_registers' declared at 'C:/Users/Julian/Desk
 INFO: [Synth 8-638] synthesizing module 'ov7670_registers' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_registers.vhd:22]
 INFO: [Synth 8-256] done synthesizing module 'ov7670_registers' (7#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_registers.vhd:22]
 INFO: [Synth 8-256] done synthesizing module 'ov7670_controller' (8#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_controller.vhd:24]
-INFO: [Synth 8-3491] module 'clocking' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/clocking.vhd:73' bound to instance 'your_instance_name' of component 'clocking' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:211]
+INFO: [Synth 8-3491] module 'clocking' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/clocking.vhd:73' bound to instance 'your_instance_name' of component 'clocking' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:210]
 INFO: [Synth 8-638] synthesizing module 'clocking' [C:/Users/Julian/Desktop/SmartCam/ov7670/clocking.vhd:83]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
@@ -108,55 +108,57 @@ INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [C:/Use
 INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [C:/Users/Julian/Desktop/SmartCam/ov7670/clocking.vhd:196]
 INFO: [Synth 8-113] binding component instance 'clkout2_buf' to cell 'BUFG' [C:/Users/Julian/Desktop/SmartCam/ov7670/clocking.vhd:201]
 INFO: [Synth 8-256] done synthesizing module 'clocking' (9#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/clocking.vhd:83]
-INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:5' bound to instance 'synchronize' of component 'sync' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:220]
-INFO: [Synth 8-638] synthesizing module 'sync' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'sync' (10#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:13]
-	Parameter m_width bound to: 3 - type: integer 
-	Parameter i_width bound to: 640 - type: integer 
-	Parameter d_width bound to: 12 - type: integer 
-INFO: [Synth 8-3491] module 'fullbuffer' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:5' bound to instance 'fl_buffer' of component 'fullbuffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:227]
-INFO: [Synth 8-638] synthesizing module 'fullbuffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:19]
-	Parameter m_width bound to: 3 - type: integer 
-	Parameter i_width bound to: 640 - type: integer 
-	Parameter d_width bound to: 12 - type: integer 
-INFO: [Synth 8-3491] module 'rgbconverter' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/rgbconverter.vhd:5' bound to instance 'rgb2grey' of component 'rgbconverter' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:77]
-INFO: [Synth 8-638] synthesizing module 'rgbconverter' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/rgbconverter.vhd:12]
-INFO: [Synth 8-256] done synthesizing module 'rgbconverter' (11#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/rgbconverter.vhd:12]
-INFO: [Synth 8-3491] module 'shiftreg3' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:5' bound to instance 'sreg0' of component 'shiftreg3' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:85]
-INFO: [Synth 8-638] synthesizing module 'shiftreg3' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:17]
-INFO: [Synth 8-3491] module 'reg' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/reg.vhd:5' bound to instance 'reg0' of component 'reg' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:35]
-INFO: [Synth 8-638] synthesizing module '\reg ' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/reg.vhd:13]
-INFO: [Synth 8-256] done synthesizing module '\reg ' (12#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/reg.vhd:13]
-INFO: [Synth 8-3491] module 'reg' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/reg.vhd:5' bound to instance 'regx' of component 'reg' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:39]
-INFO: [Synth 8-3491] module 'reg' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/reg.vhd:5' bound to instance 'regx' of component 'reg' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:39]
-INFO: [Synth 8-256] done synthesizing module 'shiftreg3' (13#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:17]
-INFO: [Synth 8-3491] module 'shiftreg3' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:5' bound to instance 'sregx' of component 'shiftreg3' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:96]
-INFO: [Synth 8-3491] module 'shiftreg3' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:5' bound to instance 'sregx' of component 'shiftreg3' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:96]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:5' bound to instance 'synchronize' of component 'sync' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:219]
+INFO: [Synth 8-638] synthesizing module 'sync' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'sync' (10#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.runs/impl_2/sync.vhd:14]
+	Parameter matrix_width bound to: 3 - type: integer 
+	Parameter image_width bound to: 640 - type: integer 
+INFO: [Synth 8-3491] module 'fullbuffer' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:6' bound to instance 'fl_buffer' of component 'fullbuffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:226]
+INFO: [Synth 8-638] synthesizing module 'fullbuffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:20]
+	Parameter matrix_width bound to: 3 - type: integer 
+	Parameter image_width bound to: 640 - type: integer 
+INFO: [Synth 8-3491] module 'rgbconverter' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/rgbconverter.vhd:5' bound to instance 'rgb2grey' of component 'rgbconverter' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'rgbconverter' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/rgbconverter.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'rgbconverter' (11#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/rgbconverter.vhd:13]
+	Parameter width bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'shiftregister' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftregister.vhd:6' bound to instance 'sreg0' of component 'shiftregister' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'shiftregister' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftregister.vhd:16]
+	Parameter width bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/reg.vhd:5' bound to instance 'reg0' of component 'reg' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftregister.vhd:36]
+INFO: [Synth 8-638] synthesizing module '\reg ' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/reg.vhd:16]
+INFO: [Synth 8-256] done synthesizing module '\reg ' (12#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/reg.vhd:16]
+INFO: [Synth 8-3491] module 'reg' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/reg.vhd:5' bound to instance 'regx' of component 'reg' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftregister.vhd:44]
+INFO: [Synth 8-3491] module 'reg' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/reg.vhd:5' bound to instance 'regx' of component 'reg' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftregister.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'shiftregister' (13#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftregister.vhd:16]
+	Parameter width bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'shiftregister' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftregister.vhd:6' bound to instance 'sregx' of component 'shiftregister' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:93]
+	Parameter width bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'shiftregister' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftregister.vhd:6' bound to instance 'sregx' of component 'shiftregister' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:93]
 	Parameter width bound to: 637 - type: integer 
-INFO: [Synth 8-3491] module 'linebuffer' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/linebuffer.vhd:5' bound to instance 'lbx' of component 'linebuffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:111]
+INFO: [Synth 8-3491] module 'linebuffer' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/linebuffer.vhd:5' bound to instance 'lbx' of component 'linebuffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:104]
 INFO: [Synth 8-638] synthesizing module 'linebuffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/linebuffer.vhd:16]
 	Parameter width bound to: 637 - type: integer 
 	Parameter width bound to: 637 - type: integer 
 INFO: [Synth 8-3491] module 'frame_buffer' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/framebuffer.vhd:5' bound to instance 'fb' of component 'frame_buffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/linebuffer.vhd:36]
-INFO: [Synth 8-638] synthesizing module 'frame_buffer__parameterized3' [C:/Users/Julian/Desktop/SmartCam/ov7670/framebuffer.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'frame_buffer__parameterized3' [C:/Users/Julian/Desktop/SmartCam/ov7670/framebuffer.vhd:22]
 	Parameter width bound to: 637 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'frame_buffer__parameterized3' (13#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/framebuffer.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'frame_buffer__parameterized3' (13#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/framebuffer.vhd:22]
 INFO: [Synth 8-256] done synthesizing module 'linebuffer' (14#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/linebuffer.vhd:16]
 	Parameter width bound to: 637 - type: integer 
-INFO: [Synth 8-3491] module 'linebuffer' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/linebuffer.vhd:5' bound to instance 'lbx' of component 'linebuffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:111]
-INFO: [Synth 8-3491] module 'sobel_filter' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd:13' bound to instance 'sobelx' of component 'sobel_filter' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:118]
-INFO: [Synth 8-638] synthesizing module 'sobel_filter' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd:26]
-INFO: [Synth 8-3491] module 'Add2' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add2.vhd:5' bound to instance 'add01' of component 'Add2' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd:57]
-INFO: [Synth 8-638] synthesizing module 'Add2' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add2.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'Add2' (15#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add2.vhd:13]
-INFO: [Synth 8-3491] module 'Add2' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add2.vhd:5' bound to instance 'add02' of component 'Add2' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd:63]
-INFO: [Synth 8-3491] module 'Add2' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add2.vhd:5' bound to instance 'add03' of component 'Add2' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd:69]
-INFO: [Synth 8-3491] module 'Add3' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add3.vhd:5' bound to instance 'add04' of component 'Add3' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd:75]
-INFO: [Synth 8-638] synthesizing module 'Add3' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add3.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'Add3' (16#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add3.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'sobel_filter' (17#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd:26]
-INFO: [Synth 8-3491] module 'sobel_filter' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd:13' bound to instance 'sobely' of component 'sobel_filter' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:128]
-INFO: [Synth 8-256] done synthesizing module 'fullbuffer' (18#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:19]
+INFO: [Synth 8-3491] module 'linebuffer' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/linebuffer.vhd:5' bound to instance 'lbx' of component 'linebuffer' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:104]
+INFO: [Synth 8-3491] module 'sobel_filter' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd:13' bound to instance 'sobelx' of component 'sobel_filter' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'sobel_filter' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd:28]
+INFO: [Synth 8-3491] module 'add2' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add2.vhd:5' bound to instance 'add01' of component 'add2' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'add2' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add2.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'add2' (15#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add2.vhd:14]
+INFO: [Synth 8-3491] module 'add2' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add2.vhd:5' bound to instance 'add02' of component 'add2' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd:65]
+INFO: [Synth 8-3491] module 'add2' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add2.vhd:5' bound to instance 'add03' of component 'add2' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd:71]
+INFO: [Synth 8-3491] module 'add3' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add3.vhd:5' bound to instance 'add04' of component 'add3' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'add3' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add3.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'add3' (16#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/Add3.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'sobel_filter' (17#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd:28]
+INFO: [Synth 8-3491] module 'sobel_filter' declared at 'C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd:13' bound to instance 'sobely' of component 'sobel_filter' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:123]
+INFO: [Synth 8-256] done synthesizing module 'fullbuffer' (18#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:20]
 INFO: [Synth 8-256] done synthesizing module 'ov7670_top' (19#1) [C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670_top.vhd:37]
 WARNING: [Synth 8-3917] design ov7670_top has port LED[7] driven by constant 0
 WARNING: [Synth 8-3917] design ov7670_top has port LED[6] driven by constant 0
@@ -166,7 +168,7 @@ WARNING: [Synth 8-3917] design ov7670_top has port LED[3] driven by constant 0
 WARNING: [Synth 8-3917] design ov7670_top has port LED[2] driven by constant 0
 WARNING: [Synth 8-3917] design ov7670_top has port LED[1] driven by constant 0
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 347.672 ; gain = 176.332
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 348.512 ; gain = 177.188
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -176,7 +178,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 347.672 ; gain = 176.332
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 348.512 ; gain = 177.188
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -196,31 +198,31 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   IBUFG => IBUF: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 613.457 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 613.523 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 613.457 ; gain = 442.117
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 613.523 ; gain = 442.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 613.457 ; gain = 442.117
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 613.523 ; gain = 442.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 613.457 ; gain = 442.117
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 613.523 ; gain = 442.199
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "taken" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "data_sr" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "divider" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "finished" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:139]
-INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:139]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:135]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/fullbuffer.vhd:135]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 613.457 ; gain = 442.117
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 613.523 ; gain = 442.199
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -243,7 +245,7 @@ Detailed RTL Component Info :
 	               32 Bit    Registers := 2     
 	               19 Bit    Registers := 1     
 	               16 Bit    Registers := 2     
-	               12 Bit    Registers := 14    
+	               12 Bit    Registers := 32    
 	               10 Bit    Registers := 2     
 	                8 Bit    Registers := 3     
 	                4 Bit    Registers := 3     
@@ -347,14 +349,22 @@ Module rgbconverter
 Detailed RTL Component Info : 
 +---Adders : 
 	   3 Input      4 Bit       Adders := 1     
-Module Add2 
+Module add2 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     12 Bit       Adders := 1     
-Module Add3 
++---Registers : 
+	               12 Bit    Registers := 1     
+Module add3 
 Detailed RTL Component Info : 
 +---Adders : 
 	   3 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+Module sobel_filter 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 5     
 Module frame_buffer__parameterized3 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -383,10 +393,12 @@ BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 613.457 ; gain = 442.117
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 613.523 ; gain = 442.199
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'fl_buffer/sobely/d5_reg[11:0]' into 'fl_buffer/sobelx/d1_reg[11:0]' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd:73]
+INFO: [Synth 8-4471] merging register 'fl_buffer/sobely/d2_reg[11:0]' into 'fl_buffer/sobelx/d6_reg[11:0]' [C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.srcs/sources_1/new/sobel_filter.vhd:62]
 INFO: [Synth 8-5546] ROM "controller/Inst_i2c_sender/divider" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "controller/Inst_i2c_sender/taken" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "controller/Inst_ov7670_registers/finished" won't be mapped to RAM because it is too sparse
@@ -400,9 +412,9 @@ WARNING: [Synth 8-3917] design ov7670_top has port LED[3] driven by constant 0
 WARNING: [Synth 8-3917] design ov7670_top has port LED[2] driven by constant 0
 WARNING: [Synth 8-3917] design ov7670_top has port LED[1] driven by constant 0
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 613.457 ; gain = 442.117
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 613.523 ; gain = 442.199
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 613.457 ; gain = 442.117
+Finished Parallel Reinference  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 613.523 ; gain = 442.199
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -460,6 +472,26 @@ INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_r
 INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[5] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[9] '
 INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[6] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[10] '
 INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[7] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[11] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobelx/d3_reg[0] ' (FD) to '\fl_buffer/sobelx/d4_reg[0] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobelx/d4_reg[0] ' (FD) to '\fl_buffer/sobelx/d1_reg[11] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobelx/d1_reg[0] ' (FD) to '\fl_buffer/sobelx/d1_reg[4] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobelx/d1_reg[1] ' (FD) to '\fl_buffer/sobelx/d1_reg[5] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobelx/d1_reg[2] ' (FD) to '\fl_buffer/sobelx/d1_reg[6] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobelx/d1_reg[3] ' (FD) to '\fl_buffer/sobelx/d1_reg[11] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobelx/d1_reg[4] ' (FD) to '\fl_buffer/sobelx/d1_reg[8] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobelx/d1_reg[5] ' (FD) to '\fl_buffer/sobelx/d1_reg[9] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobelx/d1_reg[6] ' (FD) to '\fl_buffer/sobelx/d1_reg[10] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobelx/d1_reg[7] ' (FD) to '\fl_buffer/sobelx/d1_reg[11] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobelx/d1_reg[11] ' (FD) to '\fl_buffer/sobely/d3_reg[0] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobely/d3_reg[0] ' (FD) to '\fl_buffer/sobely/d4_reg[0] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fl_buffer/sobely/d4_reg[0] )
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobely/d3_reg[1] ' (FD) to '\fl_buffer/sobely/d3_reg[5] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobely/d3_reg[2] ' (FD) to '\fl_buffer/sobely/d3_reg[6] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobely/d3_reg[3] ' (FD) to '\fl_buffer/sobely/d3_reg[7] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobely/d3_reg[4] ' (FD) to '\fl_buffer/sobely/d3_reg[8] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobely/d3_reg[5] ' (FD) to '\fl_buffer/sobely/d3_reg[9] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobely/d3_reg[6] ' (FD) to '\fl_buffer/sobely/d3_reg[10] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobely/d3_reg[7] ' (FD) to '\fl_buffer/sobely/d3_reg[11] '
 INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__47 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
 INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__23 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
 INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
@@ -504,8 +536,19 @@ INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_r
 INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[7] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[11] '
 INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[11] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[11] '
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[11] )
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobely/d1_reg[0] ' (FD) to '\fl_buffer/sobely/d1_reg[4] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobely/d1_reg[1] ' (FD) to '\fl_buffer/sobely/d1_reg[5] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobely/d1_reg[2] ' (FD) to '\fl_buffer/sobely/d1_reg[6] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobely/d1_reg[3] ' (FD) to '\fl_buffer/sobely/d1_reg[7] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobely/d1_reg[4] ' (FD) to '\fl_buffer/sobely/d1_reg[8] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobely/d1_reg[5] ' (FD) to '\fl_buffer/sobely/d1_reg[9] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobely/d1_reg[6] ' (FD) to '\fl_buffer/sobely/d1_reg[10] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobely/d1_reg[7] ' (FD) to '\fl_buffer/sobely/d1_reg[11] '
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobely/d4_reg[0] ' (FD) to '\fl_buffer/sobely/d3_reg[8] '
 INFO: [Synth 8-3886] merging instance '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[11] ' (FDE) to '\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[11] '
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[11] )
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobely/d1_reg[11] ' (FD) to '\fl_buffer/sobely/d3_reg[8] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fl_buffer/sobely/d3_reg[8] )
 WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel ) is unused and will be removed from module ov7670_top.
 WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__0 ) is unused and will be removed from module ov7670_top.
 WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__1 ) is unused and will be removed from module ov7670_top.
@@ -582,6 +625,19 @@ WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/
 WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[2] ) is unused and will be removed from module ov7670_top.
 WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[1] ) is unused and will be removed from module ov7670_top.
 WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[0] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/sobely/d3_reg[7] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/sobely/d3_reg[6] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/sobely/d3_reg[5] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/sobely/d3_reg[4] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/sobely/d3_reg[3] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/sobely/d3_reg[2] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/sobely/d3_reg[1] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/sobelx/d1_reg[6] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/sobelx/d1_reg[5] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/sobelx/d1_reg[4] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/sobelx/d1_reg[2] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/sobelx/d1_reg[1] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/sobelx/d1_reg[0] ) is unused and will be removed from module ov7670_top.
 WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[7] ) is unused and will be removed from module ov7670_top.
 WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[6] ) is unused and will be removed from module ov7670_top.
 WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[5] ) is unused and will be removed from module ov7670_top.
@@ -590,13 +646,16 @@ WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/
 WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[2] ) is unused and will be removed from module ov7670_top.
 WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[1] ) is unused and will be removed from module ov7670_top.
 WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[0] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[1].other.regx/q_reg[11] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[0].first.reg0/q_reg[11] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\fl_buffer/shift_reg[0].first.sreg0/gen_reg[2].other.regx/q_reg[11] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/sobely/d1_reg[7] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/sobely/d1_reg[6] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\fl_buffer/sobely/d1_reg[5] ) is unused and will be removed from module ov7670_top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance '\fl_buffer/sobelx/add02/C_reg[0] ' (FD) to '\fl_buffer/sobely/add02/C_reg[0] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fl_buffer/sobely/add02/C_reg[0] )
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 613.457 ; gain = 442.117
+Finished Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 613.523 ; gain = 442.199
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 613.457 ; gain = 442.117
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 613.523 ; gain = 442.199
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -610,7 +669,7 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 613.457 ; gain = 442.117
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 613.523 ; gain = 442.199
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__47 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
 INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__23 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
@@ -622,55 +681,18 @@ INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__49 
 INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__25 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
 INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__1 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
 INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__50 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
-INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__26 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
-INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__2 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
-INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__51 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
-INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__27 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
-INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__3 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
-INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__52 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
-INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__28 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
-INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__4 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
-INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__53 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
-INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__29 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
-INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__5 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
-INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__54 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
-INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__30 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
-INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__6 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
-INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__55 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
-INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__31 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
-INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__7 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
-INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__56 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
-INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__32 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
-INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__8 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
-INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__57 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
-INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__33 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
-INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__9 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
-INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__34 '
-WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__0 ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__1 ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__2 ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__3 ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__4 ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__5 ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__6 ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__7 ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__8 ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__9 ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__11 ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__12 ) is unused and will be removed from module ov7670_top.
-INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 616.152 ; gain = 444.813
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 616.391 ; gain = 445.066
 ---------------------------------------------------------------------------------
-Finished Parallel Timing Optimization  : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 616.152 ; gain = 444.813
+Finished Parallel Timing Optimization  : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 616.391 ; gain = 445.066
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 616.152 ; gain = 444.813
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 616.391 ; gain = 445.066
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
@@ -736,7 +758,7 @@ INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb1/RAM_reg_1_10  
 INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb1/RAM_reg_1_11  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-4480] The timing for the instance \controller/Inst_ov7670_registers/sreg_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 628.027 ; gain = 456.688
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 628.563 ; gain = 457.238
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -760,7 +782,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 628.027 ; gain = 456.688
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 628.563 ; gain = 457.238
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -773,7 +795,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 628.027 ; gain = 456.688
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 628.563 ; gain = 457.238
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -785,25 +807,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 628.027 ; gain = 456.688
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 628.563 ; gain = 457.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 628.027 ; gain = 456.688
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 628.563 ; gain = 457.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 628.027 ; gain = 456.688
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 628.563 ; gain = 457.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 628.027 ; gain = 456.688
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 628.563 ; gain = 457.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -822,17 +844,17 @@ Report Cell Usage:
 |1     |BUFG       |     5|
 |2     |CARRY4     |    86|
 |3     |LUT1       |   227|
-|4     |LUT2       |   139|
-|5     |LUT3       |    44|
+|4     |LUT2       |   141|
+|5     |LUT3       |    46|
 |6     |LUT4       |    65|
-|7     |LUT5       |    14|
+|7     |LUT5       |    12|
 |8     |LUT6       |    68|
 |9     |MMCME2_ADV |     1|
 |10    |RAMB18E1   |     2|
 |11    |RAMB18E1_1 |     1|
 |12    |RAMB36E1   |    60|
 |13    |RAMB36E1_1 |    60|
-|14    |FDRE       |   468|
+|14    |FDRE       |   652|
 |15    |FDSE       |    31|
 |16    |IBUF       |    12|
 |17    |IBUFG      |     1|
@@ -841,43 +863,53 @@ Report Cell Usage:
 +------+-----------+------+
 
 Report Instance Areas: 
-+------+-------------------------------+-------------------------------+------+
-|      |Instance                       |Module                         |Cells |
-+------+-------------------------------+-------------------------------+------+
-|1     |top                            |                               |  1311|
-|2     |  Inst_vga                     |vga                            |   191|
-|3     |  btn_debounce                 |debounce                       |    61|
-|4     |  capture                      |ov7670_capture                 |   168|
-|5     |  controller                   |ov7670_controller              |   181|
-|6     |    Inst_i2c_sender            |i2c_sender                     |   145|
-|7     |    Inst_ov7670_registers      |ov7670_registers               |    34|
-|8     |  fl_buffer                    |fullbuffer                     |   412|
-|9     |    \line_buff[0].lbx          |linebuffer                     |   115|
-|10    |      fb                       |frame_buffer__parameterized3_9 |    21|
-|11    |    \line_buff[1].lbx          |linebuffer_0                   |   126|
-|12    |      fb                       |frame_buffer__parameterized3   |    32|
-|13    |    \shift_reg[0].first.sreg0  |shiftreg3                      |    75|
-|14    |      \gen_reg[0].first.reg0   |reg_6                          |    27|
-|15    |      \gen_reg[1].other.regx   |reg_7                          |    21|
-|16    |      \gen_reg[2].other.regx   |reg_8                          |    27|
-|17    |    \shift_reg[1].other.sregx  |shiftreg3_1                    |    40|
-|18    |      \gen_reg[1].other.regx   |reg_4                          |    12|
-|19    |      \gen_reg[2].other.regx   |reg_5                          |    28|
-|20    |    \shift_reg[2].other.sregx  |shiftreg3_2                    |    56|
-|21    |      \gen_reg[1].other.regx   |\reg                           |    28|
-|22    |      \gen_reg[2].other.regx   |reg_3                          |    28|
-|23    |  framebuffer                  |dual_framebuffer               |   172|
-|24    |    fb0                        |frame_buffer                   |   136|
-|25    |    fb1                        |frame_buffer__parameterized1   |    36|
-|26    |  synchronize                  |sync                           |     3|
-|27    |  your_instance_name           |clocking                       |     5|
-+------+-------------------------------+-------------------------------+------+
++------+-------------------------------+--------------------------------+------+
+|      |Instance                       |Module                          |Cells |
++------+-------------------------------+--------------------------------+------+
+|1     |top                            |                                |  1497|
+|2     |  Inst_vga                     |vga                             |   191|
+|3     |  btn_debounce                 |debounce                        |    61|
+|4     |  capture                      |ov7670_capture                  |   168|
+|5     |  controller                   |ov7670_controller               |   181|
+|6     |    Inst_i2c_sender            |i2c_sender                      |   145|
+|7     |    Inst_ov7670_registers      |ov7670_registers                |    34|
+|8     |  fl_buffer                    |fullbuffer                      |   700|
+|9     |    \line_buff[0].lbx          |linebuffer                      |    95|
+|10    |      fb                       |frame_buffer__parameterized3_16 |     1|
+|11    |    \line_buff[1].lbx          |linebuffer_0                    |    96|
+|12    |      fb                       |frame_buffer__parameterized3    |     2|
+|13    |    \shift_reg[0].first.sreg0  |shiftregister                   |    10|
+|14    |      \gen_reg[0].first.reg0   |reg_13                          |     3|
+|15    |      \gen_reg[1].other.regx   |reg_14                          |     3|
+|16    |      \gen_reg[2].other.regx   |reg_15                          |     4|
+|17    |    \shift_reg[1].other.sregx  |shiftregister_1                 |    25|
+|18    |      \gen_reg[1].other.regx   |reg_11                          |    12|
+|19    |      \gen_reg[2].other.regx   |reg_12                          |    13|
+|20    |    \shift_reg[2].other.sregx  |shiftregister_2                 |    26|
+|21    |      \gen_reg[1].other.regx   |\reg                            |    13|
+|22    |      \gen_reg[2].other.regx   |reg_10                          |    13|
+|23    |    sobelx                     |sobel_filter                    |   251|
+|24    |      add01                    |add2_6                          |    30|
+|25    |      add02                    |add2_7                          |    26|
+|26    |      add03                    |add2_8                          |    27|
+|27    |      add04                    |add3_9                          |    66|
+|28    |    sobely                     |sobel_filter_3                  |   197|
+|29    |      add01                    |add2                            |    24|
+|30    |      add02                    |add2_4                          |    26|
+|31    |      add03                    |add2_5                          |    27|
+|32    |      add04                    |add3                            |    61|
+|33    |  framebuffer                  |dual_framebuffer                |   147|
+|34    |    fb0                        |frame_buffer                    |   111|
+|35    |    fb1                        |frame_buffer__parameterized1    |    36|
+|36    |  synchronize                  |sync                            |     3|
+|37    |  your_instance_name           |clocking                        |     5|
++------+-------------------------------+--------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 628.027 ; gain = 456.688
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 628.563 ; gain = 457.238
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 154 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 628.027 ; gain = 174.203
-Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 628.027 ; gain = 456.688
+Synthesis finished with 0 errors, 0 critical warnings and 186 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 628.563 ; gain = 175.531
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 628.563 ; gain = 457.238
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 223 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -888,8 +920,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   IBUFG => IBUF: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-262 Infos, 116 Warnings, 0 Critical Warnings and 0 Errors encountered.
+274 Infos, 116 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 628.027 ; gain = 439.988
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 628.027 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Nov 13 01:02:55 2015...
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 628.563 ; gain = 440.543
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 628.563 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 15 22:25:07 2015...

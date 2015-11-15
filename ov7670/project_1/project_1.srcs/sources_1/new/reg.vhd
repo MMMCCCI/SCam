@@ -4,10 +4,13 @@ use ieee.numeric_std.all;
 
 entity reg is
     port(
-         d     : in  std_logic_vector(11 downto 0);
-         q     : out std_logic_vector(11 downto 0);
          clk   : in  std_logic;
-         we    : in  std_logic);
+         we    : in  std_logic;
+         
+         d     : in  std_logic_vector(11 downto 0);
+         
+         q     : out std_logic_vector(11 downto 0)
+         );
 end reg;
 
 architecture func of reg is
