@@ -38,6 +38,8 @@ read_vhdl -library xil_defaultlib {
   /home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/clocking.vhd
   /home/ce5/Xilinx/Projects/SCam/ov7670/canny.vhd
   /home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/ov7670_top.vhd
+  /home/ce5/Xilinx/Projects/SCam/ov7670/add_2.vhd
+  /home/ce5/Xilinx/Projects/SCam/ov7670/full_buffer.vhd
 }
 read_xdc /home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/constrs_1/imports/ov7670/ov7670.xdc
 set_property used_in_implementation false [get_files /home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/constrs_1/imports/ov7670/ov7670.xdc]

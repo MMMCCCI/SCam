@@ -15,7 +15,7 @@ end sobel_y;
 
 architecture func of sobel_y is
 
-component Add2 is
+component add_2 is
   generic(d_width : integer := 12);
   Port ( 
     A : in std_logic_vector(d_width-1 downto 0);
@@ -28,21 +28,21 @@ signal q1 : std_logic_vector(d_width-1 downto 0);
 signal q2 : std_logic_vector(d_width-1 downto 0);
 
 begin
-    add_0: Add2
+    add0: add_2
     generic map(d_width => d_width)
     port map(
         A => d1,
         B => d3,
         C => q1);
         
-     add_1: Add2
+     add1: add_2
      generic map(d_width => d_width)
      port map(
          A => d2,
          B => d2,
          C => q2);
     
-     add_2: Add2
+     add2: add_2
      generic map(d_width => d_width)
      port map(
          A => q1,

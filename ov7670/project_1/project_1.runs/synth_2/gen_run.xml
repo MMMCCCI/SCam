@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_2" LaunchPart="xc7z020clg484-1" LaunchTime="1447841769">
+<GenRun Id="synth_2" LaunchPart="xc7z020clg484-1" LaunchTime="1447864375">
   <File Type="VDS-TIMING-PB" Name="ov7670_top_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="ov7670_top_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="ov7670_top.dcp"/>
@@ -249,6 +249,18 @@
     <File Path="$PSRCDIR/sources_1/new/tb_sync.vhd">
       <FileInfo>
         <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../add_2.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../full_buffer.vhd">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Tue Nov 17 23:18:15 2015'>
+<webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Wed Nov 18 17:38:16 2015'>
 <section name="__ROOT__" level="0" order="1" description="">
  <section name="software_version_and_target_device" level="1" order="1" description="">
   <keyValuePair key="beta" value="FALSE" description="" />
   <keyValuePair key="build_version" value="1368829" description="" />
-  <keyValuePair key="date_generated" value="Tue Nov 17 23:18:15 2015" description="" />
+  <keyValuePair key="date_generated" value="Wed Nov 18 17:38:16 2015" description="" />
   <keyValuePair key="os_platform" value="LIN64" description="" />
   <keyValuePair key="product_version" value="Vivado v2015.3 (64-bit)" description="" />
   <keyValuePair key="project_id" value="6bbacf2906cc47c0971fe15e568fe6cd" description="" />
-  <keyValuePair key="project_iteration" value="10" description="" />
+  <keyValuePair key="project_iteration" value="12" description="" />
   <keyValuePair key="random_id" value="54087093a4305d358d307dd3814245e2" description="" />
   <keyValuePair key="registration_id" value="211114722_0_0_704" description="" />
   <keyValuePair key="route_design" value="TRUE" description="" />
@@ -20,7 +20,7 @@
  </section>
  <section name="user_environment" level="1" order="2" description="">
   <keyValuePair key="cpu_name" value="Intel(R) Core(TM) i5-4200U CPU @ 1.60GHz" description="" />
-  <keyValuePair key="cpu_speed" value="1400.000 MHz" description="" />
+  <keyValuePair key="cpu_speed" value="1200.000 MHz" description="" />
   <keyValuePair key="os_name" value="Ubuntu" description="" />
   <keyValuePair key="os_release" value="Ubuntu 14.04.3 LTS" description="" />
   <keyValuePair key="system_ram" value="8.000 GB" description="" />
@@ -303,7 +303,7 @@
    <keyValuePair key="nets" value="1072" description="" />
    <keyValuePair key="pins" value="30626" description="" />
    <keyValuePair key="pll" value="0" description="" />
-   <keyValuePair key="router_runtime" value="75.060000" description="" />
+   <keyValuePair key="router_runtime" value="72.030000" description="" />
    <keyValuePair key="router_timing_driven" value="1" description="" />
    <keyValuePair key="threads" value="4" description="" />
    <keyValuePair key="timing_constraints_exist" value="1" description="" />
@@ -325,18 +325,21 @@
    <keyValuePair key="-keep_equivalent_registers" value="default::[not_specified]" description="" />
    <keyValuePair key="-link_dcps" value="default::[not_specified]" description="" />
    <keyValuePair key="-mode" value="default::default" description="" />
-   <keyValuePair key="-name" value="rtl_1" description="" />
-   <keyValuePair key="-part" value="default::[not_specified]" description="" />
+   <keyValuePair key="-name" value="default::[not_specified]" description="" />
+   <keyValuePair key="-part" value="xc7z020clg484-1" description="" />
    <keyValuePair key="-resource_sharing" value="default::auto" description="" />
-   <keyValuePair key="-rtl" value="[specified]" description="" />
+   <keyValuePair key="-rtl" value="default::[not_specified]" description="" />
    <keyValuePair key="-rtl_load_constraints" value="default::[not_specified]" description="" />
    <keyValuePair key="-seu_protect" value="default::none" description="" />
    <keyValuePair key="-shreg_min_size" value="default::3" description="" />
-   <keyValuePair key="-top" value="default::[not_specified]" description="" />
+   <keyValuePair key="-top" value="ov7670_top" description="" />
    <keyValuePair key="-verilog_define" value="default::[not_specified]" description="" />
   </section>
   <section name="usage" level="2" order="2" description="">
+   <keyValuePair key="elapsed" value="00:00:29s" description="" />
    <keyValuePair key="hls_ip" value="0" description="" />
+   <keyValuePair key="memory_gain" value="443.535MB" description="" />
+   <keyValuePair key="memory_peak" value="1381.340MB" description="" />
   </section>
  </section>
  <section name="unisim_transformation" level="1" order="7" description="">
@@ -383,7 +386,7 @@
  </section>
  <section name="vivado_usage" level="1" order="8" description="">
   <section name="other_data" level="2" order="1" description="">
-   <keyValuePair key="guimode" value="30" description="" />
+   <keyValuePair key="guimode" value="35" description="" />
   </section>
   <section name="project_data" level="2" order="2" description="">
    <keyValuePair key="board" value="ZedBoard Zynq Evaluation and Development Kit" description="" />
@@ -398,7 +401,7 @@
    <keyValuePair key="prproject" value="false" description="" />
    <keyValuePair key="reconfigmodulecount" value="0" description="" />
    <keyValuePair key="reconfigpartitioncount" value="0" description="" />
-   <keyValuePair key="srcsetcount" value="33" description="" />
+   <keyValuePair key="srcsetcount" value="35" description="" />
    <keyValuePair key="synthesisstrategy" value="Vivado Synthesis Defaults" description="" />
    <keyValuePair key="totalimplruns" value="1" description="" />
    <keyValuePair key="totalsynthesisruns" value="1" description="" />

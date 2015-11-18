@@ -14,7 +14,7 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1002.383 ; gain = 135.805 ; free physical = 3288 ; free virtual = 7543
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1002.387 ; gain = 135.805 ; free physical = 4324 ; free virtual = 7821
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'ov7670_top' [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/ov7670_top.vhd:37]
 INFO: [Synth 8-3491] module 'debounce' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/debounce.vhd:11' bound to instance 'btn_debounce' of component 'debounce' [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/ov7670_top.vhd:168]
@@ -140,8 +140,16 @@ INFO: [Synth 8-638] synthesizing module 'gauss3' [/home/ce5/Xilinx/Projects/SCam
 	Parameter m_width bound to: 3 - type: integer 
 	Parameter i_width bound to: 640 - type: integer 
 	Parameter d_width bound to: 4 - type: integer 
+	Parameter m_width bound to: 3 - type: integer 
+	Parameter i_width bound to: 640 - type: integer 
 	Parameter d_width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'shiftreg3' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:5' bound to instance 'sreg0' of component 'shiftreg3' [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/gauss3.vhd:71]
+INFO: [Synth 8-3491] module 'full_buffer' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/full_buffer.vhd:5' bound to instance 'fullbuffer' of component 'full_buffer' [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/gauss3.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'full_buffer' [/home/ce5/Xilinx/Projects/SCam/ov7670/full_buffer.vhd:19]
+	Parameter m_width bound to: 3 - type: integer 
+	Parameter i_width bound to: 640 - type: integer 
+	Parameter d_width bound to: 4 - type: integer 
+	Parameter d_width bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'shiftreg3' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:5' bound to instance 'sreg0' of component 'shiftreg3' [/home/ce5/Xilinx/Projects/SCam/ov7670/full_buffer.vhd:58]
 INFO: [Synth 8-638] synthesizing module 'shiftreg3' [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:18]
 	Parameter d_width bound to: 4 - type: integer 
 	Parameter d_width bound to: 4 - type: integer 
@@ -155,12 +163,12 @@ INFO: [Synth 8-3491] module 'reg' declared at '/home/ce5/Xilinx/Projects/SCam/ov
 INFO: [Synth 8-3491] module 'reg' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/new/reg.vhd:5' bound to instance 'regx' of component 'reg' [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:41]
 INFO: [Synth 8-256] done synthesizing module 'shiftreg3' (13#1) [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:18]
 	Parameter d_width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'shiftreg3' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:5' bound to instance 'sregx' of component 'shiftreg3' [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/gauss3.vhd:82]
+INFO: [Synth 8-3491] module 'shiftreg3' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:5' bound to instance 'sregx' of component 'shiftreg3' [/home/ce5/Xilinx/Projects/SCam/ov7670/full_buffer.vhd:71]
 	Parameter d_width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'shiftreg3' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:5' bound to instance 'sregx' of component 'shiftreg3' [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/gauss3.vhd:82]
+INFO: [Synth 8-3491] module 'shiftreg3' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:5' bound to instance 'sregx' of component 'shiftreg3' [/home/ce5/Xilinx/Projects/SCam/ov7670/full_buffer.vhd:71]
 	Parameter width bound to: 637 - type: integer 
 	Parameter d_width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'linebuffer' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/linebuffer.vhd:5' bound to instance 'lbx' of component 'linebuffer' [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/gauss3.vhd:97]
+INFO: [Synth 8-3491] module 'linebuffer' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/linebuffer.vhd:5' bound to instance 'lbx' of component 'linebuffer' [/home/ce5/Xilinx/Projects/SCam/ov7670/full_buffer.vhd:88]
 INFO: [Synth 8-638] synthesizing module 'linebuffer' [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/linebuffer.vhd:17]
 	Parameter width bound to: 637 - type: integer 
 	Parameter d_width bound to: 4 - type: integer 
@@ -174,19 +182,29 @@ INFO: [Synth 8-256] done synthesizing module 'frame_buffer__parameterized3' (13#
 INFO: [Synth 8-256] done synthesizing module 'linebuffer' (14#1) [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/linebuffer.vhd:17]
 	Parameter width bound to: 637 - type: integer 
 	Parameter d_width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'linebuffer' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/linebuffer.vhd:5' bound to instance 'lbx' of component 'linebuffer' [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/gauss3.vhd:97]
+INFO: [Synth 8-3491] module 'linebuffer' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/linebuffer.vhd:5' bound to instance 'lbx' of component 'linebuffer' [/home/ce5/Xilinx/Projects/SCam/ov7670/full_buffer.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'full_buffer' (15#1) [/home/ce5/Xilinx/Projects/SCam/ov7670/full_buffer.vhd:19]
 	Parameter d_width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'gauss3sum' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/gauss3sum.vhd:5' bound to instance 'sx' of component 'gauss3sum' [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/gauss3.vhd:106]
+INFO: [Synth 8-3491] module 'gauss3sum' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/gauss3sum.vhd:5' bound to instance 'sx' of component 'gauss3sum' [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/gauss3.vhd:77]
 INFO: [Synth 8-638] synthesizing module 'gauss3sum' [/home/ce5/Xilinx/Projects/SCam/ov7670/gauss3sum.vhd:16]
 	Parameter d_width bound to: 4 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'gauss3sum' (15#1) [/home/ce5/Xilinx/Projects/SCam/ov7670/gauss3sum.vhd:16]
 	Parameter d_width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'gauss3sum' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/gauss3sum.vhd:5' bound to instance 'sx' of component 'gauss3sum' [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/gauss3.vhd:106]
+INFO: [Synth 8-3491] module 'add_2' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/add_2.vhd:5' bound to instance 'add0' of component 'add_2' [/home/ce5/Xilinx/Projects/SCam/ov7670/gauss3sum.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'add_2' [/home/ce5/Xilinx/Projects/SCam/ov7670/add_2.vhd:14]
 	Parameter d_width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'gauss3sum' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/gauss3sum.vhd:5' bound to instance 'sx' of component 'gauss3sum' [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/gauss3.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'add_2' (16#1) [/home/ce5/Xilinx/Projects/SCam/ov7670/add_2.vhd:14]
 	Parameter d_width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'gauss3sum' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/gauss3sum.vhd:5' bound to instance 'sx' of component 'gauss3sum' [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/gauss3.vhd:113]
-INFO: [Synth 8-256] done synthesizing module 'gauss3' (16#1) [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/gauss3.vhd:19]
+INFO: [Synth 8-3491] module 'add_2' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/add_2.vhd:5' bound to instance 'add1' of component 'add_2' [/home/ce5/Xilinx/Projects/SCam/ov7670/gauss3sum.vhd:37]
+	Parameter d_width bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'add_2' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/add_2.vhd:5' bound to instance 'add2' of component 'add_2' [/home/ce5/Xilinx/Projects/SCam/ov7670/gauss3sum.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'gauss3sum' (17#1) [/home/ce5/Xilinx/Projects/SCam/ov7670/gauss3sum.vhd:16]
+	Parameter d_width bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'gauss3sum' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/gauss3sum.vhd:5' bound to instance 'sx' of component 'gauss3sum' [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/gauss3.vhd:77]
+	Parameter d_width bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'gauss3sum' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/gauss3sum.vhd:5' bound to instance 'sx' of component 'gauss3sum' [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/gauss3.vhd:77]
+	Parameter d_width bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'gauss3sum' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/gauss3sum.vhd:5' bound to instance 'sx' of component 'gauss3sum' [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/gauss3.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'gauss3' (18#1) [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/gauss3.vhd:19]
 	Parameter m_width bound to: 3 - type: integer 
 	Parameter i_width bound to: 640 - type: integer 
 	Parameter d_width bound to: 4 - type: integer 
@@ -195,8 +213,8 @@ INFO: [Synth 8-3491] module 'gauss3' declared at '/home/ce5/Xilinx/Projects/SCam
 INFO: [Synth 8-3491] module 'norm8' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/norm8.vhd:5' bound to instance 'normalize' of component 'norm8' [/home/ce5/Xilinx/Projects/SCam/ov7670/gaussfilter.vhd:77]
 INFO: [Synth 8-638] synthesizing module 'norm8' [/home/ce5/Xilinx/Projects/SCam/ov7670/norm8.vhd:13]
 	Parameter d_width bound to: 4 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'norm8' (17#1) [/home/ce5/Xilinx/Projects/SCam/ov7670/norm8.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'gaussfilter' (18#1) [/home/ce5/Xilinx/Projects/SCam/ov7670/gaussfilter.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'norm8' (19#1) [/home/ce5/Xilinx/Projects/SCam/ov7670/norm8.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'gaussfilter' (20#1) [/home/ce5/Xilinx/Projects/SCam/ov7670/gaussfilter.vhd:19]
 	Parameter m_width bound to: 3 - type: integer 
 	Parameter i_width bound to: 640 - type: integer 
 	Parameter d_width bound to: 4 - type: integer 
@@ -205,49 +223,41 @@ INFO: [Synth 8-638] synthesizing module 'sobel' [/home/ce5/Xilinx/Projects/SCam/
 	Parameter m_width bound to: 3 - type: integer 
 	Parameter i_width bound to: 640 - type: integer 
 	Parameter d_width bound to: 4 - type: integer 
+	Parameter m_width bound to: 3 - type: integer 
+	Parameter i_width bound to: 640 - type: integer 
 	Parameter d_width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'shiftreg3' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:5' bound to instance 'sreg0' of component 'shiftreg3' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel.vhd:87]
+INFO: [Synth 8-3491] module 'full_buffer' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/full_buffer.vhd:5' bound to instance 'fullbuffer' of component 'full_buffer' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel.vhd:71]
 	Parameter d_width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'shiftreg3' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:5' bound to instance 'sregx' of component 'shiftreg3' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel.vhd:98]
-	Parameter d_width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'shiftreg3' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/new/shiftreg3.vhd:5' bound to instance 'sregx' of component 'shiftreg3' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel.vhd:98]
-	Parameter width bound to: 637 - type: integer 
-	Parameter d_width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'linebuffer' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/linebuffer.vhd:5' bound to instance 'lbx' of component 'linebuffer' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel.vhd:113]
-	Parameter width bound to: 637 - type: integer 
-	Parameter d_width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'linebuffer' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/linebuffer.vhd:5' bound to instance 'lbx' of component 'linebuffer' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel.vhd:113]
-	Parameter d_width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'sobel_x' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/sobel_x.vhd:5' bound to instance 'sx' of component 'sobel_x' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel.vhd:122]
+INFO: [Synth 8-3491] module 'sobel_x' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/sobel_x.vhd:5' bound to instance 'sx' of component 'sobel_x' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel.vhd:94]
 INFO: [Synth 8-638] synthesizing module 'sobel_x' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel_x.vhd:15]
 	Parameter d_width bound to: 4 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'sobel_x' (19#1) [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel_x.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'sobel_x' (21#1) [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel_x.vhd:15]
 	Parameter d_width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'sobel_x' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/sobel_x.vhd:5' bound to instance 'sx' of component 'sobel_x' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel.vhd:122]
+INFO: [Synth 8-3491] module 'sobel_x' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/sobel_x.vhd:5' bound to instance 'sx' of component 'sobel_x' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel.vhd:94]
 	Parameter d_width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'sobel_x' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/sobel_x.vhd:5' bound to instance 'sx' of component 'sobel_x' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel.vhd:122]
+INFO: [Synth 8-3491] module 'sobel_x' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/sobel_x.vhd:5' bound to instance 'sx' of component 'sobel_x' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel.vhd:94]
 	Parameter d_width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'sobel_y' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/sobel_y.vhd:5' bound to instance 'sobelx_p2' of component 'sobel_y' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel.vhd:128]
+INFO: [Synth 8-3491] module 'sobel_y' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/sobel_y.vhd:5' bound to instance 'sobelx_p2' of component 'sobel_y' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel.vhd:100]
 INFO: [Synth 8-638] synthesizing module 'sobel_y' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel_y.vhd:16]
 	Parameter d_width bound to: 4 - type: integer 
 	Parameter d_width bound to: 4 - type: integer 
-INFO: [Synth 8-637] synthesizing blackbox instance 'add_0' of component 'Add2' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel_y.vhd:31]
+INFO: [Synth 8-3491] module 'add_2' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/add_2.vhd:5' bound to instance 'add0' of component 'add_2' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel_y.vhd:31]
 	Parameter d_width bound to: 4 - type: integer 
-INFO: [Synth 8-637] synthesizing blackbox instance 'add_1' of component 'Add2' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel_y.vhd:38]
+INFO: [Synth 8-3491] module 'add_2' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/add_2.vhd:5' bound to instance 'add1' of component 'add_2' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel_y.vhd:38]
 	Parameter d_width bound to: 4 - type: integer 
-INFO: [Synth 8-637] synthesizing blackbox instance 'add_2' of component 'Add2' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel_y.vhd:45]
-INFO: [Synth 8-256] done synthesizing module 'sobel_y' (20#1) [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel_y.vhd:16]
+INFO: [Synth 8-3491] module 'add_2' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/add_2.vhd:5' bound to instance 'add2' of component 'add_2' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel_y.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'sobel_y' (22#1) [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel_y.vhd:16]
 	Parameter d_width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'sobel_y' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/sobel_y.vhd:5' bound to instance 'sobely_p1_1' of component 'sobel_y' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel.vhd:134]
+INFO: [Synth 8-3491] module 'sobel_y' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/sobel_y.vhd:5' bound to instance 'sobely_p1_1' of component 'sobel_y' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel.vhd:106]
 	Parameter d_width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'sobel_y' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/sobel_y.vhd:5' bound to instance 'sobely_p1_2' of component 'sobel_y' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel.vhd:139]
+INFO: [Synth 8-3491] module 'sobel_y' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/sobel_y.vhd:5' bound to instance 'sobely_p1_2' of component 'sobel_y' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel.vhd:111]
 	Parameter d_width bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'sobel_x' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/sobel_x.vhd:5' bound to instance 'sobely_p2' of component 'sobel_x' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel.vhd:146]
-INFO: [Synth 8-256] done synthesizing module 'sobel' (21#1) [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel.vhd:19]
+INFO: [Synth 8-3491] module 'sobel_x' declared at '/home/ce5/Xilinx/Projects/SCam/ov7670/sobel_x.vhd:5' bound to instance 'sobely_p2' of component 'sobel_x' [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'sobel' (23#1) [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel.vhd:19]
 WARNING: [Synth 8-614] signal 'sobel_q' is read in the process but is not in the sensitivity list [/home/ce5/Xilinx/Projects/SCam/ov7670/canny.vhd:85]
 WARNING: [Synth 8-614] signal 'din' is read in the process but is not in the sensitivity list [/home/ce5/Xilinx/Projects/SCam/ov7670/canny.vhd:85]
-INFO: [Synth 8-256] done synthesizing module 'canny' (22#1) [/home/ce5/Xilinx/Projects/SCam/ov7670/canny.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'ov7670_top' (23#1) [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/ov7670_top.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'canny' (24#1) [/home/ce5/Xilinx/Projects/SCam/ov7670/canny.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_top' (25#1) [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/sources_1/imports/ov7670/ov7670_top.vhd:37]
 WARNING: [Synth 8-3917] design ov7670_top has port LED[7] driven by constant 0
 WARNING: [Synth 8-3917] design ov7670_top has port LED[6] driven by constant 0
 WARNING: [Synth 8-3917] design ov7670_top has port LED[5] driven by constant 0
@@ -256,7 +266,7 @@ WARNING: [Synth 8-3917] design ov7670_top has port LED[3] driven by constant 0
 WARNING: [Synth 8-3917] design ov7670_top has port LED[2] driven by constant 0
 WARNING: [Synth 8-3917] design ov7670_top has port LED[1] driven by constant 0
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1101.766 ; gain = 235.188 ; free physical = 3189 ; free virtual = 7445
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1101.770 ; gain = 235.188 ; free physical = 4226 ; free virtual = 7723
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -266,7 +276,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1101.766 ; gain = 235.188 ; free physical = 3189 ; free virtual = 7445
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1101.770 ; gain = 235.188 ; free physical = 4226 ; free virtual = 7722
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -277,7 +287,6 @@ Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/constrs_1/imports/ov7670/ov7670.xdc]
 Finished Parsing XDC File [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/constrs_1/imports/ov7670/ov7670.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/constrs_1/imports/ov7670/ov7670.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/ov7670_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.srcs/constrs_1/imports/ov7670/ov7670.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ov7670_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/ov7670_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
@@ -287,33 +296,33 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   IBUFG => IBUF: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1359.266 ; gain = 0.000 ; free physical = 2972 ; free virtual = 7228
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1359.270 ; gain = 0.000 ; free physical = 4063 ; free virtual = 7552
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 5952 
+INFO: Helper process launched with PID 3821 
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1359.270 ; gain = 492.691 ; free physical = 2983 ; free virtual = 7220
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1359.273 ; gain = 492.691 ; free physical = 4059 ; free virtual = 7548
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1359.270 ; gain = 492.691 ; free physical = 2983 ; free virtual = 7220
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1359.273 ; gain = 492.691 ; free physical = 4059 ; free virtual = 7548
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1359.270 ; gain = 492.691 ; free physical = 2983 ; free virtual = 7220
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1359.273 ; gain = 492.691 ; free physical = 4059 ; free virtual = 7548
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "taken" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "data_sr" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "divider" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "finished" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel.vhd:152]
-INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel.vhd:152]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel.vhd:124]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/home/ce5/Xilinx/Projects/SCam/ov7670/sobel.vhd:124]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1359.270 ; gain = 492.691 ; free physical = 3056 ; free virtual = 7293
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1359.273 ; gain = 492.691 ; free physical = 4057 ; free virtual = 7546
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -328,8 +337,9 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input     10 Bit       Adders := 2     
 	   2 Input      8 Bit       Adders := 4     
-	   4 Input      4 Bit       Adders := 9     
+	   2 Input      4 Bit       Adders := 33    
 	   3 Input      4 Bit       Adders := 4     
+	   4 Input      4 Bit       Adders := 1     
 +---Registers : 
 	               32 Bit    Registers := 2     
 	               19 Bit    Registers := 1     
@@ -434,10 +444,6 @@ Module sync
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 2     
-Module gauss3sum 
-Detailed RTL Component Info : 
-+---Adders : 
-	   4 Input      4 Bit       Adders := 1     
 Module frame_buffer__parameterized3 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -448,6 +454,10 @@ Module reg
 Detailed RTL Component Info : 
 +---Registers : 
 	                4 Bit    Registers := 1     
+Module add_2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
 Module sobel_x 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -470,13 +480,20 @@ BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1359.273 ; gain = 492.695 ; free physical = 3056 ; free virtual = 7293
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1359.277 ; gain = 492.695 ; free physical = 4057 ; free virtual = 7546
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "controller/Inst_i2c_sender/divider" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "controller/Inst_i2c_sender/taken" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "controller/Inst_ov7670_registers/finished" won't be mapped to RAM because it is too sparse
+DSP Debug: Collapsed multipler of size 4, multiple = 2
+DSP Debug: Collapsed multipler of size 4, multiple = 2
+DSP Debug: Collapsed multipler of size 4, multiple = 2
+DSP Debug: Collapsed multipler of size 4, multiple = 2
+DSP Debug: Collapsed multipler of size 4, multiple = 2
+DSP Debug: Collapsed multipler of size 4, multiple = 2
+DSP Debug: Collapsed multipler of size 4, multiple = 2
 WARNING: [Synth 8-3917] design ov7670_top has port OV7670_RESET driven by constant 1
 WARNING: [Synth 8-3917] design ov7670_top has port OV7670_PWDN driven by constant 0
 WARNING: [Synth 8-3917] design ov7670_top has port LED[7] driven by constant 0
@@ -487,9 +504,9 @@ WARNING: [Synth 8-3917] design ov7670_top has port LED[3] driven by constant 0
 WARNING: [Synth 8-3917] design ov7670_top has port LED[2] driven by constant 0
 WARNING: [Synth 8-3917] design ov7670_top has port LED[1] driven by constant 0
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1359.273 ; gain = 492.695 ; free physical = 3059 ; free virtual = 7295
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1359.277 ; gain = 492.695 ; free physical = 4059 ; free virtual = 7548
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1359.273 ; gain = 492.695 ; free physical = 3059 ; free virtual = 7295
+Finished Parallel Reinference  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1359.277 ; gain = 492.695 ; free physical = 4059 ; free virtual = 7548
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -497,12 +514,12 @@ Report RTL Partitions:
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
 INFO: [Synth 8-4652] Swapped enable and write-enable on 12 RAM instances of RAM framebuffer/fb1/RAM_reg to conserve power
-INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/fb/RAM_reg to conserve power
-WARNING: [Synth 8-5730] RAM cannyfilter/gauss_filter/gauss_0/line_buff[1].lbx/fb/RAM_reg got removed due to cross hierarchy optimization. 
-INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM cannyfilter/gauss_filter/gauss_1/line_buff[0].lbx/fb/RAM_reg to conserve power
-WARNING: [Synth 8-5730] RAM cannyfilter/gauss_filter/gauss_1/line_buff[1].lbx/fb/RAM_reg got removed due to cross hierarchy optimization. 
-INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM cannyfilter/sobel_filter/line_buff[0].lbx/fb/RAM_reg to conserve power
-INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM cannyfilter/sobel_filter/line_buff[1].lbx/fb/RAM_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/fb/RAM_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[1].lbx/fb/RAM_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM cannyfilter/gauss_filter/gauss_1/fullbuffer/line_buff[0].lbx/fb/RAM_reg to conserve power
+WARNING: [Synth 8-5730] RAM cannyfilter/gauss_filter/gauss_1/fullbuffer/line_buff[1].lbx/fb/RAM_reg got removed due to cross hierarchy optimization. 
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM cannyfilter/sobel_filter/fullbuffer/line_buff[0].lbx/fb/RAM_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM cannyfilter/sobel_filter/fullbuffer/line_buff[1].lbx/fb/RAM_reg to conserve power
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
@@ -517,16 +534,17 @@ ROM:
 
 
 Block RAM:
-+------------+--------------------------------------------------------------+------------------------+---+---+-------------------------+---+---+--------------+--------+--------+-----------------------+
-|Module Name | RTL Object                                                   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width)  | W | R | OUT_REG      | RAMB18 | RAMB36 | Hierarchical Name     | 
-+------------+--------------------------------------------------------------+------------------------+---+---+-------------------------+---+---+--------------+--------+--------+-----------------------+
-|ov7670_top  | framebuffer/fb0/RAM_reg                                      | 256 K x 12             | W |   | 256 K x 12(WRITE_FIRST) |   | R | Port A and B | 0      | 96     | ov7670_top/extram__9  | 
-|ov7670_top  | framebuffer/fb1/RAM_reg                                      | 64 K x 12              | W |   | 64 K x 12(WRITE_FIRST)  |   | R | Port A and B | 0      | 24     | ov7670_top/extram__11 | 
-|ov7670_top  | cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/fb/RAM_reg | 1 K x 4(READ_FIRST)    | W |   | 1 K x 4(WRITE_FIRST)    |   | R | Port A and B | 1      | 0      | ov7670_top/extram__13 | 
-|ov7670_top  | cannyfilter/gauss_filter/gauss_1/line_buff[0].lbx/fb/RAM_reg | 1 K x 4(READ_FIRST)    | W |   | 1 K x 4(WRITE_FIRST)    |   | R | Port A and B | 1      | 0      | ov7670_top/extram__16 | 
-|ov7670_top  | cannyfilter/sobel_filter/line_buff[0].lbx/fb/RAM_reg         | 1 K x 4(READ_FIRST)    | W |   | 1 K x 4(WRITE_FIRST)    |   | R | Port A and B | 1      | 0      | ov7670_top/extram__19 | 
-|ov7670_top  | cannyfilter/sobel_filter/line_buff[1].lbx/fb/RAM_reg         | 1 K x 4(READ_FIRST)    | W |   | 1 K x 4(WRITE_FIRST)    |   | R | Port A and B | 1      | 0      | ov7670_top/extram__21 | 
-+------------+--------------------------------------------------------------+------------------------+---+---+-------------------------+---+---+--------------+--------+--------+-----------------------+
++------------+-------------------------------------------------------------------------+------------------------+---+---+-------------------------+---+---+--------------+--------+--------+-----------------------+
+|Module Name | RTL Object                                                              | PORT A (Depth x Width) | W | R | PORT B (Depth x Width)  | W | R | OUT_REG      | RAMB18 | RAMB36 | Hierarchical Name     | 
++------------+-------------------------------------------------------------------------+------------------------+---+---+-------------------------+---+---+--------------+--------+--------+-----------------------+
+|ov7670_top  | framebuffer/fb0/RAM_reg                                                 | 256 K x 12             | W |   | 256 K x 12(WRITE_FIRST) |   | R | Port A and B | 0      | 96     | ov7670_top/extram__9  | 
+|ov7670_top  | framebuffer/fb1/RAM_reg                                                 | 64 K x 12              | W |   | 64 K x 12(WRITE_FIRST)  |   | R | Port A and B | 0      | 24     | ov7670_top/extram__11 | 
+|ov7670_top  | cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/fb/RAM_reg | 1 K x 4(READ_FIRST)    | W |   | 1 K x 4(WRITE_FIRST)    |   | R | Port A and B | 1      | 0      | ov7670_top/extram__13 | 
+|ov7670_top  | cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[1].lbx/fb/RAM_reg | 1 K x 4(READ_FIRST)    | W |   | 1 K x 4(WRITE_FIRST)    |   | R | Port A and B | 1      | 0      | ov7670_top/extram__15 | 
+|ov7670_top  | cannyfilter/gauss_filter/gauss_1/fullbuffer/line_buff[0].lbx/fb/RAM_reg | 1 K x 4(READ_FIRST)    | W |   | 1 K x 4(WRITE_FIRST)    |   | R | Port A and B | 1      | 0      | ov7670_top/extram__17 | 
+|ov7670_top  | cannyfilter/sobel_filter/fullbuffer/line_buff[0].lbx/fb/RAM_reg         | 1 K x 4(READ_FIRST)    | W |   | 1 K x 4(WRITE_FIRST)    |   | R | Port A and B | 1      | 0      | ov7670_top/extram__20 | 
+|ov7670_top  | cannyfilter/sobel_filter/fullbuffer/line_buff[1].lbx/fb/RAM_reg         | 1 K x 4(READ_FIRST)    | W |   | 1 K x 4(WRITE_FIRST)    |   | R | Port A and B | 1      | 0      | ov7670_top/extram__22 | 
++------------+-------------------------------------------------------------------------+------------------------+---+---+-------------------------+---+---+--------------+--------+--------+-----------------------+
 
 Note: The table above shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. "Hierarchical Name" reflects the Block RAM name as it appears in the hierarchical module and only part of it is displayed.
 ---------------------------------------------------------------------------------
@@ -629,52 +647,52 @@ WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__56
 WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__57 ) is unused and will be removed from module ov7670_top.
 WARNING: [Synth 8-3332] Sequential element (\framebuffer/fb0/RAM_reg_mux_sel__58 ) is unused and will be removed from module ov7670_top.
 WARNING: [Synth 8-3332] Sequential element (\capture/d_latch_reg[11] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\capture/we_reg ) is unused and will be removed from module ov7670_top.
 WARNING: [Synth 8-3332] Sequential element (\controller/Inst_i2c_sender/data_sr_reg[0] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrIn_reg[0] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrIn_reg[1] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrIn_reg[2] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrIn_reg[3] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrIn_reg[4] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrIn_reg[5] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrIn_reg[6] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrIn_reg[7] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrIn_reg[8] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrIn_reg[9] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrIn_reg[10] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrIn_reg[11] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrIn_reg[12] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrIn_reg[13] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrIn_reg[14] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrIn_reg[15] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrIn_reg[16] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrIn_reg[17] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrIn_reg[18] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrOut_reg[0] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrOut_reg[1] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrOut_reg[2] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrOut_reg[3] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrOut_reg[4] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrOut_reg[5] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrOut_reg[6] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrOut_reg[7] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrOut_reg[8] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrOut_reg[9] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrOut_reg[10] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrOut_reg[11] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrOut_reg[12] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrOut_reg[13] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrOut_reg[14] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrOut_reg[15] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrOut_reg[16] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrOut_reg[17] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[0].lbx/addrOut_reg[18] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[1].lbx/addrIn_reg[0] ) is unused and will be removed from module ov7670_top.
-WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/line_buff[1].lbx/addrIn_reg[1] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\synchronize/tclk_reg ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\synchronize/valid_reg ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrIn_reg[0] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrIn_reg[1] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrIn_reg[2] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrIn_reg[3] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrIn_reg[4] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrIn_reg[5] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrIn_reg[6] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrIn_reg[7] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrIn_reg[8] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrIn_reg[9] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrIn_reg[10] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrIn_reg[11] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrIn_reg[12] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrIn_reg[13] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrIn_reg[14] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrIn_reg[15] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrIn_reg[16] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrIn_reg[17] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrIn_reg[18] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrOut_reg[0] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrOut_reg[1] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrOut_reg[2] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrOut_reg[3] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrOut_reg[4] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrOut_reg[5] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrOut_reg[6] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrOut_reg[7] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrOut_reg[8] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrOut_reg[9] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrOut_reg[10] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrOut_reg[11] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrOut_reg[12] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrOut_reg[13] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrOut_reg[14] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrOut_reg[15] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrOut_reg[16] ) is unused and will be removed from module ov7670_top.
+WARNING: [Synth 8-3332] Sequential element (\cannyfilter/gauss_filter/gauss_0/fullbuffer/line_buff[0].lbx/addrOut_reg[17] ) is unused and will be removed from module ov7670_top.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1359.273 ; gain = 492.695 ; free physical = 3043 ; free virtual = 7279
+Finished Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1359.277 ; gain = 492.695 ; free physical = 4059 ; free virtual = 7548
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1359.273 ; gain = 492.695 ; free physical = 3043 ; free virtual = 7279
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1359.277 ; gain = 492.695 ; free physical = 4059 ; free virtual = 7548
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -688,7 +706,7 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1359.273 ; gain = 492.695 ; free physical = 2991 ; free virtual = 7227
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1359.277 ; gain = 492.695 ; free physical = 4028 ; free virtual = 7511
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__47 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
 INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__23 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 '
@@ -725,16 +743,16 @@ INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__33 
 INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__9 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__10 '
 INFO: [Synth 8-3886] merging instance 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__58 ' (FD) to 'i_0/\framebuffer/fb0/RAM_reg_mux_sel__34 '
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1365.273 ; gain = 498.695 ; free physical = 2970 ; free virtual = 7206
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1364.277 ; gain = 497.695 ; free physical = 4007 ; free virtual = 7491
 ---------------------------------------------------------------------------------
-Finished Parallel Timing Optimization  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1365.273 ; gain = 498.695 ; free physical = 2970 ; free virtual = 7206
+Finished Parallel Timing Optimization  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1364.277 ; gain = 497.695 ; free physical = 4007 ; free virtual = 7491
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1365.273 ; gain = 498.695 ; free physical = 2970 ; free virtual = 7206
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1364.277 ; gain = 497.695 ; free physical = 4007 ; free virtual = 7491
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
@@ -800,7 +818,7 @@ INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb1/RAM_reg_1_10  
 INFO: [Synth 8-4480] The timing for the instance \framebuffer/fb1/RAM_reg_1_11  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-4480] The timing for the instance \controller/Inst_ov7670_registers/sreg_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1381.289 ; gain = 514.711 ; free physical = 2954 ; free virtual = 7190
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1381.340 ; gain = 514.758 ; free physical = 3990 ; free virtual = 7474
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -824,7 +842,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1381.289 ; gain = 514.711 ; free physical = 2954 ; free virtual = 7190
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1381.340 ; gain = 514.758 ; free physical = 3990 ; free virtual = 7474
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -837,7 +855,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1381.289 ; gain = 514.711 ; free physical = 2954 ; free virtual = 7190
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1381.340 ; gain = 514.758 ; free physical = 3990 ; free virtual = 7474
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -848,113 +866,85 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-115] binding instance 'i_0' in module 'sobel' to reference 'sobel_y_2' which has no pins
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1381.289 ; gain = 514.711 ; free physical = 2954 ; free virtual = 7190
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1381.340 ; gain = 514.758 ; free physical = 3990 ; free virtual = 7474
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1381.289 ; gain = 514.711 ; free physical = 2954 ; free virtual = 7190
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1381.340 ; gain = 514.758 ; free physical = 3990 ; free virtual = 7474
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1381.289 ; gain = 514.711 ; free physical = 2954 ; free virtual = 7190
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1381.340 ; gain = 514.758 ; free physical = 3990 ; free virtual = 7474
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1381.289 ; gain = 514.711 ; free physical = 2954 ; free virtual = 7190
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1381.340 ; gain = 514.758 ; free physical = 3990 ; free virtual = 7474
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 Report BlackBoxes: 
-+------+--------------+----------+
-|      |BlackBox name |Instances |
-+------+--------------+----------+
-|1     |Add2          |         9|
-+------+--------------+----------+
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
 
 Report Cell Usage: 
-+------+---------------+------+
-|      |Cell           |Count |
-+------+---------------+------+
-|1     |Add2_bbox      |     1|
-|2     |Add2_bbox_0    |     1|
-|3     |Add2_bbox_0__1 |     1|
-|4     |Add2_bbox_0__2 |     1|
-|5     |Add2_bbox_1    |     1|
-|6     |Add2_bbox_1__1 |     1|
-|7     |Add2_bbox_1__2 |     1|
-|8     |Add2_bbox__1   |     1|
-|9     |Add2_bbox__2   |     1|
-|10    |BUFG           |     5|
-|11    |CARRY4         |    36|
-|12    |LUT1           |   158|
-|13    |LUT2           |    52|
-|14    |LUT3           |    26|
-|15    |LUT4           |    39|
-|16    |LUT5           |    13|
-|17    |LUT6           |    52|
-|18    |MMCME2_ADV     |     1|
-|19    |RAMB18E1       |     2|
-|20    |RAMB18E1_1     |     1|
-|21    |RAMB36E1       |    60|
-|22    |RAMB36E1_1     |    60|
-|23    |FDRE           |   427|
-|24    |FDSE           |    31|
-|25    |IBUF           |    12|
-|26    |IBUFG          |     1|
-|27    |OBUF           |    26|
-|28    |OBUFT          |     1|
-+------+---------------+------+
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     4|
+|2     |CARRY4     |    16|
+|3     |LUT1       |    82|
+|4     |LUT2       |    49|
+|5     |LUT3       |    26|
+|6     |LUT4       |    31|
+|7     |LUT5       |    11|
+|8     |LUT6       |    38|
+|9     |MMCME2_ADV |     1|
+|10    |RAMB18E1   |     1|
+|11    |RAMB36E1   |    60|
+|12    |RAMB36E1_1 |    60|
+|13    |FDRE       |   332|
+|14    |FDSE       |    31|
+|15    |IBUF       |    12|
+|16    |IBUFG      |     1|
+|17    |OBUF       |    26|
+|18    |OBUFT      |     1|
++------+-----------+------+
 
 Report Instance Areas: 
-+------+---------------------------------+-------------------------------+------+
-|      |Instance                         |Module                         |Cells |
-+------+---------------------------------+-------------------------------+------+
-|1     |top                              |                               |  1039|
-|2     |  Inst_vga                       |vga                            |   191|
-|3     |  btn_debounce                   |debounce                       |    61|
-|4     |  cannyfilter                    |canny                          |   252|
-|5     |    sobel_filter                 |sobel                          |   252|
-|6     |      \line_buff[0].lbx          |linebuffer                     |    97|
-|7     |        fb                       |frame_buffer__parameterized3_7 |     3|
-|8     |      \line_buff[1].lbx          |linebuffer_0                   |    97|
-|9     |        fb                       |frame_buffer__parameterized3   |     3|
-|10    |      \shift_reg[1].other.sregx  |shiftreg3                      |    11|
-|11    |        \gen_reg[1].other.regx   |reg_5                          |     4|
-|12    |        \gen_reg[2].other.regx   |reg_6                          |     7|
-|13    |      \shift_reg[2].other.sregx  |shiftreg3_1                    |    11|
-|14    |        \gen_reg[1].other.regx   |\reg                           |     4|
-|15    |        \gen_reg[2].other.regx   |reg_4                          |     7|
-|16    |      sobelx_p2                  |sobel_y                        |    12|
-|17    |      sobely_p1_1                |sobel_y_2                      |    12|
-|18    |      sobely_p1_2                |sobel_y_3                      |    12|
-|19    |  capture                        |ov7670_capture                 |   159|
-|20    |  controller                     |ov7670_controller              |   181|
-|21    |    Inst_i2c_sender              |i2c_sender                     |   145|
-|22    |    Inst_ov7670_registers        |ov7670_registers               |    34|
-|23    |  framebuffer                    |dual_framebuffer               |   146|
-|24    |    fb0                          |frame_buffer                   |   110|
-|25    |    fb1                          |frame_buffer__parameterized1   |    36|
-|26    |  synchronize                    |sync                           |     3|
-|27    |  your_instance_name             |clocking                       |     5|
-+------+---------------------------------+-------------------------------+------+
++------+--------------------------+-----------------------------+------+
+|      |Instance                  |Module                       |Cells |
++------+--------------------------+-----------------------------+------+
+|1     |top                       |                             |   782|
+|2     |  Inst_vga                |vga                          |   191|
+|3     |  btn_debounce            |debounce                     |    61|
+|4     |  capture                 |ov7670_capture               |   158|
+|5     |  controller              |ov7670_controller            |   181|
+|6     |    Inst_i2c_sender       |i2c_sender                   |   145|
+|7     |    Inst_ov7670_registers |ov7670_registers             |    34|
+|8     |  framebuffer             |dual_framebuffer             |   146|
+|9     |    fb0                   |frame_buffer                 |   110|
+|10    |    fb1                   |frame_buffer__parameterized1 |    36|
+|11    |  your_instance_name      |clocking                     |     5|
++------+--------------------------+-----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1381.289 ; gain = 514.711 ; free physical = 2954 ; free virtual = 7190
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1381.340 ; gain = 514.758 ; free physical = 3990 ; free virtual = 7474
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 342 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1381.289 ; gain = 165.402 ; free physical = 2954 ; free virtual = 7190
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1381.289 ; gain = 514.711 ; free physical = 2954 ; free virtual = 7190
+Synthesis finished with 0 errors, 0 critical warnings and 455 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1381.340 ; gain = 165.449 ; free physical = 3990 ; free virtual = 7474
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1381.340 ; gain = 514.758 ; free physical = 3990 ; free virtual = 7474
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 173 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 151 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -963,8 +953,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   IBUFG => IBUF: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-261 Infos, 122 Warnings, 0 Critical Warnings and 0 Errors encountered.
+266 Infos, 119 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1381.293 ; gain = 443.492 ; free physical = 2940 ; free virtual = 7190
-report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1413.309 ; gain = 0.000 ; free physical = 2938 ; free virtual = 7189
-INFO: [Common 17-206] Exiting Vivado at Wed Nov 18 11:16:47 2015...
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1381.344 ; gain = 443.539 ; free physical = 3990 ; free virtual = 7474
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1413.359 ; gain = 0.000 ; free physical = 3989 ; free virtual = 7472
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 18 17:33:34 2015...

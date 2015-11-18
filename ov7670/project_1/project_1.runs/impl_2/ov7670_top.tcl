@@ -49,7 +49,7 @@ start_step write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   open_checkpoint ov7670_top_routed.dcp
-  set_property webtalk.parent_dir /home/ce5/Xilinx/Projects/ov7670/project_1/project_1.cache/wt [current_project]
+  set_property webtalk.parent_dir /home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.cache/wt [current_project]
   catch { write_mem_info -force ov7670_top.mmi }
   write_bitstream -force ov7670_top.bit 
   catch { write_sysdef -hwdef ov7670_top.hwdef -bitfile ov7670_top.bit -meminfo ov7670_top.mmi -file ov7670_top.sysdef }
