@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD=/home/ce5/Xilinx/Projects/ov7670/project_1/project_1.runs/synth_2
+HD_PWD=/home/ce5/Xilinx/Projects/SCam/ov7670/project_1/project_1.runs/synth_2
 cd "$HD_PWD"
 
 HD_LOG=runme.log
