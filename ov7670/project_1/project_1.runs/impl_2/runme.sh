@@ -6,25 +6,21 @@
 # Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 # 
 
-echo "This script was generated under a different operating system."
-echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executing this script"
-exit
-
 if [ -z "$PATH" ]; then
-  PATH=C:/Xilinx/Vivado/2015.3/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2015.3/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2015.3/bin
+  PATH=/home/ce5/Xilinx/Vivado/2015.3/ids_lite/ISE/bin/lin64:/home/ce5/Xilinx/Vivado/2015.3/bin
 else
-  PATH=C:/Xilinx/Vivado/2015.3/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2015.3/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2015.3/bin:$PATH
+  PATH=/home/ce5/Xilinx/Vivado/2015.3/ids_lite/ISE/bin/lin64:/home/ce5/Xilinx/Vivado/2015.3/bin:$PATH
 fi
 export PATH
 
 if [ -z "$LD_LIBRARY_PATH" ]; then
-  LD_LIBRARY_PATH=
+  LD_LIBRARY_PATH=/home/ce5/Xilinx/Vivado/2015.3/ids_lite/ISE/lib/lin64
 else
-  LD_LIBRARY_PATH=:$LD_LIBRARY_PATH
+  LD_LIBRARY_PATH=/home/ce5/Xilinx/Vivado/2015.3/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD=C:/Users/Julian/Desktop/SmartCam/ov7670/project_1/project_1.runs/impl_2
+HD_PWD=/home/ce5/Xilinx/Projects/ov7670/project_1/project_1.runs/impl_2
 cd "$HD_PWD"
 
 HD_LOG=runme.log

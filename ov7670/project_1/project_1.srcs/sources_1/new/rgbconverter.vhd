@@ -1,16 +1,15 @@
-library ieee;
-use ieee.std_logic_1164.all;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
 use ieee.numeric_std.all;
 
 entity rgbconverter is
   Port (
      din  : in std_logic_vector(11 downto 0);
-     
      dout : out std_logic_vector(11 downto 0) := (others => '0')
   );
 end rgbconverter;
 
-architecture func of rgbconverter is
+architecture Behavioral of rgbconverter is
   signal r    : std_logic_vector(3 downto 0);
   signal g    : std_logic_vector(3 downto 0);
   signal b    : std_logic_vector(3 downto 0);
@@ -24,4 +23,4 @@ begin
  dout(7 downto 4) <= std_logic_vector((unsigned(r)+unsigned(g)+unsigned(b))/3);
  dout(3 downto 0) <= std_logic_vector((unsigned(r)+unsigned(g)+unsigned(b))/3);
 
-end func;
+end Behavioral;

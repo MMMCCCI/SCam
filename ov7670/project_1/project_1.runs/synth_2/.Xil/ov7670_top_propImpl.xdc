@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/Julian/Desktop/SmartCam/ov7670/ov7670.xdc rfile:../../../../ov7670.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/ce5/Xilinx/Projects/ov7670/project_1/project_1.srcs/constrs_1/imports/ov7670/ov7670.xdc rfile:../../../project_1.srcs/constrs_1/imports/ov7670/ov7670.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN Y9 [get_ports clk100]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]

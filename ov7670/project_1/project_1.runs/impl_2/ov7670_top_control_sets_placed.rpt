@@ -1,8 +1,8 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2015.3 (win64) Build 1368829 Mon Sep 28 20:06:43 MDT 2015
-| Date         : Sun Nov 15 22:26:26 2015
-| Host         : Julian-PC running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
+| Date         : Tue Nov 17 23:15:26 2015
+| Host         : MMMCCCI running 64-bit Ubuntu 14.04.3 LTS
 | Command      : report_control_sets -verbose -file ov7670_top_control_sets_placed.rpt
 | Design       : ov7670_top
 | Device       : xc7z020
@@ -22,8 +22,8 @@ Table of Contents
 +-------------------------------------------------------------------+-------+
 |                               Status                              | Count |
 +-------------------------------------------------------------------+-------+
-| Number of unique control sets                                     |    20 |
-| Minimum Number of register sites lost to control set restrictions |    76 |
+| Number of unique control sets                                     |    14 |
+| Minimum Number of register sites lost to control set restrictions |    47 |
 +-------------------------------------------------------------------+-------+
 
 
@@ -33,12 +33,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             218 |           79 |
+| No           | No                    | No                     |              29 |           24 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             105 |           32 |
-| Yes          | No                    | No                     |             111 |           40 |
+| No           | Yes                   | No                     |             105 |           29 |
+| Yes          | No                    | No                     |              53 |           18 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             258 |           62 |
+| Yes          | Yes                   | No                     |             182 |           44 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -48,26 +48,20 @@ Table of Contents
 +----------------------------+----------------------------------------------------+------------------------------------------------+------------------+----------------+
 |        Clock Signal        |                    Enable Signal                   |                Set/Reset Signal                | Slice Load Count | Bel Load Count |
 +----------------------------+----------------------------------------------------+------------------------------------------------+------------------+----------------+
-|  valid_BUFG                |                                                    |                                                |                3 |              3 |
-|  your_instance_name/CLK_25 | controller/Inst_ov7670_registers/divider_reg[0][0] |                                                |                3 |              8 |
-|  your_instance_name/CLK_25 |                                                    | Inst_vga/hCounter[9]_i_1_n_0                   |                3 |             10 |
+|  your_instance_name/CLK_50 |                                                    |                                                |                5 |              6 |
+|  your_instance_name/CLK_25 | controller/Inst_ov7670_registers/divider_reg[0][0] |                                                |                2 |              8 |
+|  your_instance_name/CLK_25 |                                                    | Inst_vga/hCounter[9]_i_1_n_0                   |                4 |             10 |
 |  your_instance_name/CLK_25 | Inst_vga/hCounter[9]_i_1_n_0                       | Inst_vga/vCounter                              |                3 |             10 |
-|  your_instance_name/CLK_25 | controller/Inst_i2c_sender/busy_sr0                | controller/Inst_i2c_sender/data_sr[30]_i_1_n_0 |                4 |             11 |
-|  your_instance_name/CLK_25 | controller/Inst_i2c_sender/E[0]                    | btn_debounce/SR[0]                             |                3 |             16 |
-|  your_instance_name/CLK_25 | controller/Inst_i2c_sender/busy_sr0                |                                                |                5 |             18 |
-|  valid_BUFG                | capture/we                                         | fl_buffer/line_buff[1].lbx/addrOut             |                5 |             19 |
-|  valid_BUFG                | capture/we                                         | fl_buffer/line_buff[1].lbx/addrIn              |                5 |             19 |
-|  valid_BUFG                | capture/we                                         | fl_buffer/line_buff[0].lbx/addrOut             |                5 |             19 |
-|  valid_BUFG                | capture/we                                         | fl_buffer/line_buff[0].lbx/addrIn              |                5 |             19 |
+|  your_instance_name/CLK_25 | controller/Inst_i2c_sender/busy_sr0                | controller/Inst_i2c_sender/data_sr[30]_i_1_n_0 |                3 |             11 |
+|  your_instance_name/CLK_25 | controller/Inst_i2c_sender/E[0]                    | btn_debounce/SR[0]                             |                4 |             16 |
+|  your_instance_name/CLK_25 | controller/Inst_i2c_sender/busy_sr0                |                                                |                4 |             18 |
 |  OV7670_PCLK_IBUF_BUFG     | capture/wr_hold_reg_n_0_[1]                        | OV7670_VSYNC_IBUF                              |                5 |             19 |
-|  your_instance_name/CLK_25 |                                                    |                                                |               18 |             23 |
+|  your_instance_name/CLK_25 |                                                    |                                                |               19 |             23 |
 |  your_instance_name/CLK_50 |                                                    | btn_debounce/o_i_1_n_0                         |                7 |             25 |
-|  OV7670_PCLK_IBUF_BUFG     | capture/we_i_1_n_0                                 |                                                |                8 |             28 |
+|  OV7670_PCLK_IBUF_BUFG     | capture/d_latch[15]_i_1_n_0                        |                                                |               12 |             27 |
 |  your_instance_name/CLK_25 | controller/Inst_i2c_sender/busy_sr0                | controller/Inst_i2c_sender/busy_sr[31]_i_1_n_0 |                6 |             31 |
-|  valid_BUFG                | capture/we                                         |                                                |               24 |             57 |
-|  OV7670_PCLK_IBUF_BUFG     |                                                    | OV7670_VSYNC_IBUF                              |               22 |             70 |
-|  your_instance_name/CLK_25 | Inst_vga/address[0]_i_2_n_0                        | Inst_vga/clear                                 |               21 |             95 |
-|  your_instance_name/CLK_50 |                                                    |                                                |               58 |            192 |
+|  OV7670_PCLK_IBUF_BUFG     |                                                    | OV7670_VSYNC_IBUF                              |               18 |             70 |
+|  your_instance_name/CLK_25 | Inst_vga/address[0]_i_2_n_0                        | Inst_vga/clear                                 |               23 |             95 |
 +----------------------------+----------------------------------------------------+------------------------------------------------+------------------+----------------+
 
 

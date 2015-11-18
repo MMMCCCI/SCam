@@ -7,26 +7,24 @@ entity frame_buffer is
   port (
     clka  : in std_logic;
     wea   : in std_logic;
-    
     addra : in std_logic_vector(18 downto 0);
     dina  : in std_logic_vector(11 downto 0);
 
     clkb  : in  std_logic;
     addrb : in  std_logic_vector(18 downto 0);
-    
     doutb : out std_logic_vector(11 downto 0)
     );
 end;
 
 
-architecture Behavioral of frame_buffer is
+architecture syn of frame_buffer is
   type ram_type is array (width-1 downto 0) of std_logic_vector (11 downto 0);
   signal RAM : ram_type;
 begin
 
   process (clka)
   begin
-    if (rising_edge(clka)) then
+    if (clka'event and clka = '1') then
       if (wea = '1') then
         RAM(to_integer(unsigned(addra))) <= dina;
       end if;
@@ -35,9 +33,10 @@ begin
 
   process (clkb)
   begin
-    if (rising_edge(clkb)) then
+    if (clkb'event and clkb = '1') then
       doutb <= RAM(to_integer(unsigned(addrb)));
     end if;
   end process;
 
-end Behavioral;
+
+end syn;

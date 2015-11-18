@@ -1,33 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_2" LaunchPart="xc7z020clg484-1" LaunchTime="1447622716">
-  <File Type="OPT-DCP" Name="ov7670_top_opt.dcp"/>
-  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_2/constrs_in.xml"/>
-  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_2/sources.xml"/>
-  <File Type="ROUTE-DCP" Name="ov7670_top_routed.dcp"/>
-  <File Type="PA-TCL" Name="ov7670_top.tcl"/>
-  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_2/impl_2.psg"/>
-  <File Type="OPT-DRC" Name="ov7670_top_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="ov7670_top_timing_summary_init.rpt"/>
-  <File Type="OPT-TIMING" Name="ov7670_top_timing_summary_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="ov7670_top.hwdef"/>
-  <File Type="PWROPT-DCP" Name="ov7670_top_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="ov7670_top_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="ov7670_top_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="ov7670_top_placed.dcp"/>
-  <File Type="PLACE-IO" Name="ov7670_top_io_placed.rpt"/>
+<GenRun Id="impl_2" LaunchPart="xc7z020clg484-1" LaunchTime="1447798485">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="ov7670_top.vdi"/>
+  <File Type="BG-DRC" Name="ov7670_top.drc"/>
+  <File Type="BG-BGN" Name="ov7670_top.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="ov7670_top.sysdef"/>
+  <File Type="BITSTR-MMI" Name="ov7670_top.mmi"/>
+  <File Type="BITSTR-BMM" Name="ov7670_top_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="ov7670_top.nky"/>
+  <File Type="BITSTR-RBT" Name="ov7670_top.rbt"/>
+  <File Type="BITSTR-MSK" Name="ov7670_top.msk"/>
+  <File Type="BG-BIN" Name="ov7670_top.bin"/>
+  <File Type="BG-BIT" Name="ov7670_top.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="ov7670_top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ov7670_top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ov7670_top_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="ov7670_top_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="ov7670_top_incremental_reuse_routed.rpt"/>
   <File Type="PLACE-CLK" Name="ov7670_top_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="ov7670_top_placed.dcp"/>
+  <File Type="PWROPT-DRC" Name="ov7670_top_drc_pwropted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ov7670_top_timing_summary_postroute_physopted.pb"/>
+  <File Type="PA-TCL" Name="ov7670_top.tcl"/>
+  <File Type="PWROPT-DCP" Name="ov7670_top_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="ov7670_top.hwdef"/>
+  <File Type="PWROPT-TIMING" Name="ov7670_top_timing_summary_pwropted.rpt"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_2/constrs_in.xml"/>
+  <File Type="OPT-DRC" Name="ov7670_top_drc_opted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="ov7670_top_timing_summary_physopted.rpt"/>
+  <File Type="INIT-TIMING" Name="ov7670_top_timing_summary_init.rpt"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_2/sources.xml"/>
+  <File Type="OPT-TIMING" Name="ov7670_top_timing_summary_opted.rpt"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_2/impl_2.psg"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="ov7670_top_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PLACE-IO" Name="ov7670_top_io_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="ov7670_top_utilization_placed.rpt"/>
+  <File Type="OPT-DCP" Name="ov7670_top_opt.dcp"/>
   <File Type="PLACE-UTIL-PB" Name="ov7670_top_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="ov7670_top_control_sets_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="ov7670_top_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="ov7670_top_incremental_reuse_pre_placed.rpt"/>
   <File Type="PLACE-TIMING" Name="ov7670_top_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="ov7670_top_postplace_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="ov7670_top_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="ov7670_top_physopt.dcp"/>
-  <File Type="RDI-RDI" Name="ov7670_top.vdi"/>
   <File Type="PHYSOPT-DRC" Name="ov7670_top_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-TIMING" Name="ov7670_top_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="ov7670_top_routed.dcp"/>
   <File Type="ROUTE-DRC" Name="ov7670_top_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="ov7670_top_drc_routed.pb"/>
   <File Type="ROUTE-PWR" Name="ov7670_top_power_routed.rpt"/>
@@ -37,26 +54,9 @@
   <File Type="ROUTE-TIMINGSUMMARY" Name="ov7670_top_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="ov7670_top_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="ov7670_top_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="ov7670_top_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="ov7670_top_clock_utilization_routed.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ov7670_top_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ov7670_top_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ov7670_top_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="ov7670_top_timing_summary_postroute_physopted.rpx"/>
-  <File Type="BG-BIT" Name="ov7670_top.bit"/>
-  <File Type="BG-BIN" Name="ov7670_top.bin"/>
-  <File Type="BITSTR-MSK" Name="ov7670_top.msk"/>
-  <File Type="BITSTR-RBT" Name="ov7670_top.rbt"/>
-  <File Type="BITSTR-NKY" Name="ov7670_top.nky"/>
-  <File Type="BITSTR-BMM" Name="ov7670_top_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="ov7670_top.mmi"/>
-  <File Type="BITSTR-SYSDEF" Name="ov7670_top.sysdef"/>
-  <File Type="BG-BGN" Name="ov7670_top.bgn"/>
-  <File Type="BG-DRC" Name="ov7670_top.drc"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/reg.vhd">
+    <File Path="$PSRCDIR/sources_1/new/Add3.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -68,25 +68,27 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/Add3.vhd">
+    <File Path="$PSRCDIR/sources_1/new/reg.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../framebuffer.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/ov7670/framebuffer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../framebuffer.vhd"/>
+        <Attr Name="ImportTime" Val="1447339363"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sobel_filter.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/port_array.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/shiftregister.vhd">
+    <File Path="$PSRCDIR/sources_1/new/shiftreg3.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -98,26 +100,26 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../linebuffer.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/ov7670/linebuffer.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../linebuffer.vhd"/>
+        <Attr Name="ImportTime" Val="1447339945"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/sobel_filter.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/ov7670/ov7670_registers.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov7670_registers.vhd"/>
+        <Attr Name="ImportTime" Val="1446552532"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../ov7670_registers.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/ov7670/i2c_sender.vhd">
       <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../i2c_sender.vhd">
-      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../i2c_sender.vhd"/>
+        <Attr Name="ImportTime" Val="1445324136"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -128,78 +130,158 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PRUNDIR/impl_2/sync.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/ov7670/project_1/project_1.runs/impl_2/sync.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PRUNDIR/impl_2/sync.vhd"/>
+        <Attr Name="ImportTime" Val="1447164100"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ov7670/dual_framebuffer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../dual_framebuffer.vhd"/>
+        <Attr Name="ImportTime" Val="1447339360"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ov7670/vga.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../vga.vhd"/>
+        <Attr Name="ImportTime" Val="1445324136"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ov7670/ov7670_controller.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov7670_controller.vhd"/>
+        <Attr Name="ImportTime" Val="1445324136"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ov7670/ov7670_capture.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov7670_capture.vhd"/>
+        <Attr Name="ImportTime" Val="1445324136"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ov7670/debounce.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../debounce.vhd"/>
+        <Attr Name="ImportTime" Val="1445324136"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ov7670/clocking.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../clocking.vhd"/>
+        <Attr Name="ImportTime" Val="1445324136"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ov7670/ov7670_top.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov7670_top.vhd"/>
+        <Attr Name="ImportTime" Val="1447166552"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/shiftregister.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../dual_framebuffer.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/ov7670/tb_i2c_sender.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../tb_i2c_sender.vhd"/>
+        <Attr Name="ImportTime" Val="1445324136"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../vga.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/ov7670/tb_ov7670_top.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../tb_ov7670_top.vhd"/>
+        <Attr Name="ImportTime" Val="1445324136"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../ov7670_controller.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/ov7670/tb_linebuffer.vhd">
       <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../ov7670_capture.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../debounce.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../clocking.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../ov7670_top.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../tb_i2c_sender.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../tb_ov7670_top.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../tb_linebuffer.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../tb_linebuffer.vhd"/>
+        <Attr Name="ImportTime" Val="1447349241"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/tb_sync.vhd">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ov7670/gauss3.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../gauss3.vhd"/>
+        <Attr Name="ImportTime" Val="1447696174"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../gauss3sum.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../norm8.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../sobel_x.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../sobel_y.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../sobel.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../gaussfilter.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../canny.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../rgbconv4bit.vhd">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -211,8 +293,10 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../ov7670.xdc">
+    <File Path="$PSRCDIR/constrs_1/imports/ov7670/ov7670.xdc">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ov7670.xdc"/>
+        <Attr Name="ImportTime" Val="1445324136"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>

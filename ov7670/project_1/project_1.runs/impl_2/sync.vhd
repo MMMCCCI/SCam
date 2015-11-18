@@ -6,7 +6,6 @@ entity sync is
   port (
     pclk  : in std_logic;
     clk   : in std_logic;
-    
     valid : out std_logic
     );
 end;
@@ -22,6 +21,6 @@ begin
             tclk    <= pclk; 
             valid   <= (not pclk) and tclk; 
         end if;
-    end process;
+     end process;
 
 end func;

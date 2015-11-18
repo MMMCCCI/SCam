@@ -1,8 +1,8 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2015.3 (win64) Build 1368829 Mon Sep 28 20:06:43 MDT 2015
-| Date             : Sun Nov 15 22:27:54 2015
-| Host             : Julian-PC running 64-bit major release  (build 9200)
+| Tool Version     : Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
+| Date             : Tue Nov 17 23:16:45 2015
+| Host             : MMMCCCI running 64-bit Ubuntu 14.04.3 LTS
 | Command          : 
 | Design           : ov7670_top
 | Device           : xc7z020clg484-1
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.294 |
-| Dynamic (W)              | 0.164 |
+| Total On-Chip Power (W)  | 0.290 |
+| Dynamic (W)              | 0.160 |
 | Device Static (W)        | 0.130 |
 | Effective TJA (C/W)      | 11.5  |
-| Max Ambient (C)          | 81.6  |
-| Junction Temperature (C) | 28.4  |
+| Max Ambient (C)          | 81.7  |
+| Junction Temperature (C) | 28.3  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -49,19 +49,19 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.004 |        6 |       --- |             --- |
-| Slice Logic    |     0.002 |     1429 |       --- |             --- |
-|   LUT as Logic |     0.001 |      506 |     53200 |            0.95 |
-|   Register     |    <0.001 |      692 |    106400 |            0.65 |
-|   CARRY4       |    <0.001 |       86 |     13300 |            0.65 |
-|   BUFG         |    <0.001 |        2 |        32 |            6.25 |
-|   Others       |     0.000 |       67 |       --- |             --- |
-| Signals        |     0.009 |     1322 |       --- |             --- |
-| Block RAM      |     0.041 |    121.5 |       140 |           86.79 |
+| Clocks         |     0.003 |        6 |       --- |             --- |
+| Slice Logic    |    <0.001 |      758 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      304 |     53200 |            0.57 |
+|   Register     |    <0.001 |      369 |    106400 |            0.35 |
+|   CARRY4       |    <0.001 |       16 |     13300 |            0.12 |
+|   BUFG         |    <0.001 |        1 |        32 |            3.13 |
+|   Others       |     0.000 |       26 |       --- |             --- |
+| Signals        |     0.007 |      858 |       --- |             --- |
+| Block RAM      |     0.041 |    120.5 |       140 |           86.07 |
 | MMCM           |     0.106 |        1 |         4 |           25.00 |
 | I/O            |     0.003 |       40 |       200 |           20.00 |
 | Static Power   |     0.130 |          |           |                 |
-| Total          |     0.294 |          |           |                 |
+| Total          |     0.290 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.063 |       0.052 |      0.010 |
+| Vccint    |       1.000 |     0.059 |       0.049 |      0.010 |
 | Vccaux    |       1.800 |     0.078 |       0.059 |      0.019 |
 | Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -147,46 +147,20 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+------------------------------+-----------+
-| Name                         | Power (W) |
-+------------------------------+-----------+
-| ov7670_top                   |     0.164 |
-|   Inst_vga                   |    <0.001 |
-|   btn_debounce               |    <0.001 |
-|   capture                    |     0.006 |
-|   controller                 |    <0.001 |
-|     Inst_i2c_sender          |    <0.001 |
-|     Inst_ov7670_registers    |    <0.001 |
-|   fl_buffer                  |     0.005 |
-|     line_buff[0].lbx         |    <0.001 |
-|       fb                     |    <0.001 |
-|     line_buff[1].lbx         |    <0.001 |
-|       fb                     |    <0.001 |
-|     shift_reg[0].first.sreg0 |    <0.001 |
-|       gen_reg[0].first.reg0  |    <0.001 |
-|       gen_reg[1].other.regx  |    <0.001 |
-|       gen_reg[2].other.regx  |    <0.001 |
-|     shift_reg[1].other.sregx |    <0.001 |
-|       gen_reg[1].other.regx  |    <0.001 |
-|       gen_reg[2].other.regx  |    <0.001 |
-|     shift_reg[2].other.sregx |    <0.001 |
-|       gen_reg[1].other.regx  |    <0.001 |
-|       gen_reg[2].other.regx  |    <0.001 |
-|     sobelx                   |     0.003 |
-|       add01                  |    <0.001 |
-|       add02                  |    <0.001 |
-|       add03                  |    <0.001 |
-|       add04                  |     0.001 |
-|     sobely                   |     0.001 |
-|       add01                  |    <0.001 |
-|       add02                  |    <0.001 |
-|       add03                  |    <0.001 |
-|       add04                  |    <0.001 |
-|   framebuffer                |     0.043 |
-|     fb0                      |     0.023 |
-|     fb1                      |     0.020 |
-|   synchronize                |    <0.001 |
-|   your_instance_name         |     0.106 |
-+------------------------------+-----------+
++---------------------------+-----------+
+| Name                      | Power (W) |
++---------------------------+-----------+
+| ov7670_top                |     0.160 |
+|   Inst_vga                |    <0.001 |
+|   btn_debounce            |    <0.001 |
+|   capture                 |     0.006 |
+|   controller              |    <0.001 |
+|     Inst_i2c_sender       |    <0.001 |
+|     Inst_ov7670_registers |    <0.001 |
+|   framebuffer             |     0.044 |
+|     fb0                   |     0.023 |
+|     fb1                   |     0.020 |
+|   your_instance_name      |     0.106 |
++---------------------------+-----------+
 
 

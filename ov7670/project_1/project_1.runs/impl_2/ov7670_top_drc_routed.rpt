@@ -1,8 +1,8 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2015.3 (win64) Build 1368829 Mon Sep 28 20:06:43 MDT 2015
-| Date         : Sun Nov 15 22:27:50 2015
-| Host         : Julian-PC running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
+| Date         : Tue Nov 17 23:16:43 2015
+| Host         : MMMCCCI running 64-bit Ubuntu 14.04.3 LTS
 | Command      : report_drc
 ------------------------------------------------------------------------------------
 
@@ -31,7 +31,7 @@ Resolution: Poor placement of an IO pin and a BUFG has resulted in the router us
 This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
 
 	OV7670_PCLK_IBUF_inst (IBUF.O) is locked to AB10
-	OV7670_PCLK_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y1
+	OV7670_PCLK_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y0
 
 Related violations: <none>
 

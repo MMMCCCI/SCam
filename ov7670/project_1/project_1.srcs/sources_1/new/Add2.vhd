@@ -1,25 +1,18 @@
-library ieee;
-use ieee.std_logic_1164.all;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
 use ieee.numeric_std.all;
 
-entity add2 is
-  Port (
-    clk : in std_logic;
-    
+entity Add2 is
+  Port ( 
     A : in std_logic_vector(11 downto 0);
     B : in std_logic_vector(11 downto 0);
-    C : out std_logic_vector(11 downto 0));
-end add2;
+    C : out std_logic_vector(11 downto 0)
+    );
+end Add2;
 
-architecture func of add2 is
+architecture Behavioral of Add2 is
 
 begin
-
-    process(clk)
-    begin
-        if(rising_edge(clk)) then
-            C <= std_logic_vector(unsigned(A)+unsigned(B));
-        end if;
-    end process;
+    C <= std_logic_vector(unsigned(A)+unsigned(B));
     
-end func;
+end Behavioral;
